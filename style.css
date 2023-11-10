@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 *{
     font-family: 'Anton', sans-serif;
     color: white;
@@ -17,3 +18,17 @@
     background-color: #b4deec;
 }
 
+=======
+button {
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: not-allowed;
+  }
+  
+  button.clickable {
+    cursor: pointer;
+  }
+>>>>>>> 4470013e34f1227e3033cfa4d298a18a752ec7b4
