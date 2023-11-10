@@ -1,0 +1,145 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#wrapper{
+    width: 730px;
+    height: 900px;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    gap: 10px;
+}
+
+.item{
+    border: 1px solid black;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.item1{
+    grid-column: span 2;
+    grid-row: span 1;
+}
+
+.item2{
+    grid-column: span 2;
+    grid-row: span 3;
+}
+
+.item3{
+    grid-column: span 3;
+    grid-row: span 3;
+}
+
+.item4{ 
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+.item5{ 
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+.item6{ 
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+.item7{ 
+    grid-column: span 3;
+    grid-row: span 2;
+}
+
+.item8{ 
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+.item9{ 
+    grid-column: span 2;
+    grid-row: span 3;
+}
+
+.item10{ 
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+.item11{ 
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+.item12{ 
+    grid-column: span 3;
+    grid-row: span 3;
+}
+
+.item13{ 
+    grid-column: span 4;
+    grid-row: span 1;
+}
+
+.item14{ 
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+.item15{ 
+    grid-column: span 2;
+    grid-row: span 1;
+}
+
+.item16{ 
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+.item17{ 
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+.item18{ 
+    grid-column: span 3;
+    grid-row: span 2;
+}
+
+.item19{ 
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+.item20{ 
+    grid-column: span 2;
+    grid-row: span 3;
+}
+
+.item21{ 
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+.item22{ 
+    grid-column: span 1;
+    grid-row: span 2;
+}
+
+.item23{ 
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+.item24{ 
+    grid-column: span 2;
+    grid-row: span 1;
+}

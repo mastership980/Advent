@@ -1,0 +1,19 @@
+*{
+    font-family: 'Anton', sans-serif;
+    color: white;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 50px;
+}
+
+#wrapper{
+    background-image: url("./images/Koko.png");
+    background-position: center;
+    background-size: contain;
+}
+
+.item{
+    background-color: #b4deec;
+}
+
