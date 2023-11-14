@@ -1,5 +1,5 @@
 function specialButtonClick() {
-    alert("helyes napon kattintottál rá!");
+    alert("Helyes napon kattintottál rá!");
   }
   
   document.addEventListener("DOMContentLoaded", function() {
