@@ -1,78 +1,334 @@
 function aClick() { // 1.
-  alert("placeholder"); //ide kell rakni amit kellene csinálnia
+  
+    var item1 = document.getElementById("item1");
+  
+    // Hozzáadja az "opened" osztályt, ami elindítja az animációt
+    item1.classList.add("opened");
+
+    if (item.classList.contains("opened")) {
+      return;
+    }
+  
+    // Távolítsa el az eseménykezelőt, hogy ne lehessen újra kattintani
+    document.getElementById("a").onclick = null;
 }
 function qClick(){ // 17.
-  alert("placeholder"); //ide kell rakni amit kellene csinálnia
+  var item2 = document.getElementById("item2");
+  
+  // Hozzáadja az "opened" osztályt, ami elindítja az animációt
+  item2.classList.add("opened");
+
+  if (item2.classList.contains("opened")) {
+    return;
+  }
+
+  // Távolítsa el az eseménykezelőt, hogy ne lehessen újra kattintani
+  document.getElementById("q").onclick = null;
 }
 function tClick(){ // 20.
-  alert("placeholder"); //ide kell rakni amit kellene csinálnia
+  var item3 = document.getElementById("item3");
+  
+  // Hozzáadja az "opened" osztályt, ami elindítja az animációt
+  item3.classList.add("opened");
+
+  if (item3.classList.contains("opened")) {
+    return;
+  }
+
+  // Távolítsa el az eseménykezelőt, hogy ne lehessen újra kattintani
+  document.getElementById("t").onclick = null;
 }
 function iClick(){ // 9.
-  alert("placeholder"); //ide kell rakni amit kellene csinálnia
+  var item4 = document.getElementById("item4");
+  
+  // Hozzáadja az "opened" osztályt, ami elindítja az animációt
+  item4.classList.add("opened");
+
+  if (item4.classList.contains("opened")) {
+    return;
+  }
+
+  // Távolítsa el az eseménykezelőt, hogy ne lehessen újra kattintani
+  document.getElementById("i").onclick = null;
 }
 function eClick(){ // 5.
-  alert("placeholder"); //ide kell rakni amit kellene csinálnia
-}
+  var item5 = document.getElementById("item5");
+  
+  // Hozzáadja az "opened" osztályt, ami elindítja az animációt
+  item5.classList.add("opened");
+
+  if (item5.classList.contains("opened")) {
+    return;
+  }
+
+  // Távolítsa el az eseménykezelőt, hogy ne lehessen újra kattintani
+  document.getElementById("e").onclick = null;
+  }
 function bClick(){ // 2.
-  alert("placeholder"); //ide kell rakni amit kellene csinálnia
-}
+    var item6 = document.getElementById("item6");
+  
+    // Ellenőrizzük, hogy az elem rendelkezik-e már az "opened" osztállyal
+    // Ha igen, akkor visszatérünk, hogy ne indítsuk újra az animációt
+    if (item6.classList.contains("opened")) {
+      return;
+    }
+  
+    // Hozzáadja az "opened" osztályt, ami elindítja az animációt
+    item6.classList.add("opened");
+    document.getElementById("b").onclick = null;
+  }
+
 function nClick(){ // 14.
-  alert("placeholder"); //ide kell rakni amit kellene csinálnia
+  var item7 = document.getElementById("item7");
+  
+  // Hozzáadja az "opened" osztályt, ami elindítja az animációt
+  item7.classList.add("opened");
+
+  if (item7.classList.contains("opened")) {
+    return;
+  }
+
+  // Távolítsa el az eseménykezelőt, hogy ne lehessen újra kattintani
+  document.getElementById("n").onclick = null;
 }
 function dClick(){ // 4.
-  alert("placeholder"); //ide kell rakni amit kellene csinálnia
+  var item8 = document.getElementById("item8");
+  
+  // Hozzáadja az "opened" osztályt, ami elindítja az animációt
+  item8.classList.add("opened");
+
+  if (item8.classList.contains("opened")) {
+    return;
+  }
+
+  // Távolítsa el az eseménykezelőt, hogy ne lehessen újra kattintani
+  document.getElementById("d").onclick = null;
 }
 function hClick(){ // 8.
-  alert("placeholder"); //ide kell rakni amit kellene csinálnia
+  var item9 = document.getElementById("item9");
+  
+  // Hozzáadja az "opened" osztályt, ami elindítja az animációt
+  item9.classList.add("opened");
+
+  if (item9.classList.contains("opened")) {
+    return;
+  }
+
+  // Távolítsa el az eseménykezelőt, hogy ne lehessen újra kattintani
+  document.getElementById("h").onclick = null;
+
 }
 function fClick(){ // 6.
-  alert("placeholder"); //ide kell rakni amit kellene csinálnia
+  var item10 = document.getElementById("item10");
+  
+  // Hozzáadja az "opened" osztályt, ami elindítja az animációt
+  item10.classList.add("opened");
+
+  if (item10.classList.contains("opened")) {
+    return;
+  }
+
+  // Távolítsa el az eseménykezelőt, hogy ne lehessen újra kattintani
+  document.getElementById("f").onclick = null;
 }
 function cClick(){ // 3.
-  alert("placeholder"); //ide kell rakni amit kellene csinálnia
+  var item11 = document.getElementById("item11");
+  
+  // Hozzáadja az "opened" osztályt, ami elindítja az animációt
+  item11.classList.add("opened");
+
+  if (item11.classList.contains("opened")) {
+    return;
+  }
+
+  // Távolítsa el az eseménykezelőt, hogy ne lehessen újra kattintani
+  document.getElementById("c").onclick = null;
 }
 function xClick(){ // 24.
-  alert("placeholder"); //ide kell rakni amit kellene csinálnia
+  var item12 = document.getElementById("item12");
+  
+  // Hozzáadja az "opened" osztályt, ami elindítja az animációt
+  item12.classList.add("opened");
+
+  if (item12.classList.contains("opened")) {
+    return;
+  }
+
+  // Távolítsa el az eseménykezelőt, hogy ne lehessen újra kattintani
+  document.getElementById("x").onclick = null;
 }
 function kClick(){ // 11.
-  alert("placeholder"); //ide kell rakni amit kellene csinálnia
+  var item13 = document.getElementById("item13");
+  
+  // Hozzáadja az "opened" osztályt, ami elindítja az animációt
+  item13.classList.add("opened");
+
+  if (item13.classList.contains("opened")) {
+    return;
+  }
+
+  // Távolítsa el az eseménykezelőt, hogy ne lehessen újra kattintani
+  document.getElementById("k").onclick = null;
 }
 function jClick(){ // 10.
-  alert("placeholder"); //ide kell rakni amit kellene csinálnia
+  var item14 = document.getElementById("item14");
+  
+  // Hozzáadja az "opened" osztályt, ami elindítja az animációt
+  item14.classList.add("opened");
+
+  if (item14.classList.contains("opened")) {
+    return;
+  }
+
+  // Távolítsa el az eseménykezelőt, hogy ne lehessen újra kattintani
+  document.getElementById("j").onclick = null;
 }
 function oClick(){ // 15.
-  alert("placeholder"); //ide kell rakni amit kellene csinálnia
+  var item15 = document.getElementById("item15");
+  
+  // Hozzáadja az "opened" osztályt, ami elindítja az animációt
+  item15.classList.add("opened");
+
+  if (item15.classList.contains("opened")) {
+    return;
+  }
+
+  // Távolítsa el az eseménykezelőt, hogy ne lehessen újra kattintani
+  document.getElementById("o").onclick = null;
 }
 function gClick(){ // 7.
-  alert("placeholder"); //ide kell rakni amit kellene csinálnia
+  var item16 = document.getElementById("item16");
+  
+  // Hozzáadja az "opened" osztályt, ami elindítja az animációt
+  item16.classList.add("opened");
+
+  if (item16.classList.contains("opened")) {
+    return;
+  }
+
+  // Távolítsa el az eseménykezelőt, hogy ne lehessen újra kattintani
+  document.getElementById("g").onclick = null;
+}
+function cClick(){ // 3.
+  var item11 = document.getElementById("item11");
+  
+  // Hozzáadja az "opened" osztályt, ami elindítja az animációt
+  item11.classList.add("opened");
+
+  if (item11.classList.contains("opened")) {
+    return;
+  }
+
+  // Távolítsa el az eseménykezelőt, hogy ne lehessen újra kattintani
+  document.getElementById("c").onclick = null;
 }
 function mClick(){ // 13.
-  alert("placeholder"); //ide kell rakni amit kellene csinálnia
+  var item17 = document.getElementById("item17");
+  
+  // Hozzáadja az "opened" osztályt, ami elindítja az animációt
+  item17.classList.add("opened");
+
+  if (item17.classList.contains("opened")) {
+    return;
+  }
+
+  // Távolítsa el az eseménykezelőt, hogy ne lehessen újra kattintani
+  document.getElementById("m").onclick = null;
 }
 function lClick(){ // 12.
-  alert("placeholder"); //ide kell rakni amit kellene csinálnia
+  var item18 = document.getElementById("item18");
+  
+  // Hozzáadja az "opened" osztályt, ami elindítja az animációt
+  item18.classList.add("opened");
+
+  if (item18.classList.contains("opened")) {
+    return;
+  }
+
+  // Távolítsa el az eseménykezelőt, hogy ne lehessen újra kattintani
+  document.getElementById("l").onclick = null;
 }
 function pClick(){ // 16.
-  alert("placeholder"); //ide kell rakni amit kellene csinálnia
+  var item19 = document.getElementById("item19");
+  
+  // Hozzáadja az "opened" osztályt, ami elindítja az animációt
+  item19.classList.add("opened");
+
+  if (item19.classList.contains("opened")) {
+    return;
+  }
+
+  // Távolítsa el az eseménykezelőt, hogy ne lehessen újra kattintani
+  document.getElementById("p").onclick = null;
 }
 function uClick(){ // 21.
-  alert("placeholder"); //ide kell rakni amit kellene csinálnia
+  var item20 = document.getElementById("item20");
+  
+  // Hozzáadja az "opened" osztályt, ami elindítja az animációt
+  item20.classList.add("opened");
+
+  if (item20.classList.contains("opened")) {
+    return;
+  }
+
+  // Távolítsa el az eseménykezelőt, hogy ne lehessen újra kattintani
+  document.getElementById("u").onclick = null;
 }
 function vClick(){ // 22.
-  alert("placeholder"); //ide kell rakni amit kellene csinálnia
+  var item21 = document.getElementById("item21");
+  
+  // Hozzáadja az "opened" osztályt, ami elindítja az animációt
+  item21.classList.add("opened");
+
+  if (item21.classList.contains("opened")) {
+    return;
+  }
+
+  // Távolítsa el az eseménykezelőt, hogy ne lehessen újra kattintani
+  document.getElementById("v").onclick = null;
 }
 function wClick(){ // 23.
-  alert("placeholder"); //ide kell rakni amit kellene csinálnia
+  var item22 = document.getElementById("item22");
+  
+  // Hozzáadja az "opened" osztályt, ami elindítja az animációt
+  item22.classList.add("opened");
+
+  if (item22.classList.contains("opened")) {
+    return;
+  }
+
+  // Távolítsa el az eseménykezelőt, hogy ne lehessen újra kattintani
+  document.getElementById("w").onclick = null;
 }
 function rClick(){ // 18.
-  alert("placeholder"); //ide kell rakni amit kellene csinálnia
+  var item23 = document.getElementById("item23");
+  
+  // Hozzáadja az "opened" osztályt, ami elindítja az animációt
+  item23.classList.add("opened");
+
+  if (item23.classList.contains("opened")) {
+    return;
+  }
+
+  // Távolítsa el az eseménykezelőt, hogy ne lehessen újra kattintani
+  document.getElementById("r").onclick = null;
 }
 function sClick(){ // 19.
-  alert("placeholder"); //ide kell rakni amit kellene csinálnia 
+  var item24 = document.getElementById("item24");
+  
+  // Hozzáadja az "opened" osztályt, ami elindítja az animációt
+  item24.classList.add("opened");
+
+  if (item24.classList.contains("opened")) {
+    return;
+  }
+
+  // Távolítsa el az eseménykezelőt, hogy ne lehessen újra kattintani
+  document.getElementById("s").onclick = null;
 }
 
 document.addEventListener("DOMContentLoaded", function aClick() { //1
-  var specialDate = new Date('2023-12-01'); 
+  var specialDate = new Date('2023-11-18'); 
   var today = new Date();
 
   var specialButton = document.getElementById('a');
@@ -87,7 +343,7 @@ document.addEventListener("DOMContentLoaded", function aClick() { //1
 });
 
 document.addEventListener("DOMContentLoaded", function qClick() { //17
-  var specialDate = new Date('2023-12-17'); 
+  var specialDate = new Date('2023-11-18'); 
   var today = new Date();
 
   var specialButton = document.getElementById('q');
@@ -102,7 +358,7 @@ document.addEventListener("DOMContentLoaded", function qClick() { //17
 });
 
 document.addEventListener("DOMContentLoaded", function aClick() { //20
-  var specialDate = new Date('2023-12-20'); 
+  var specialDate = new Date('2023-11-18'); 
   var today = new Date();
 
   var specialButton = document.getElementById('t');
@@ -117,7 +373,7 @@ document.addEventListener("DOMContentLoaded", function aClick() { //20
 });
 
 document.addEventListener("DOMContentLoaded", function aClick() { //9
-  var specialDate = new Date('2023-12-09'); 
+  var specialDate = new Date('2023-11-18'); 
   var today = new Date();
 
   var specialButton = document.getElementById('i');
@@ -132,7 +388,7 @@ document.addEventListener("DOMContentLoaded", function aClick() { //9
 });
 
 document.addEventListener("DOMContentLoaded", function aClick() { //5
-  var specialDate = new Date('2023-12-05'); 
+  var specialDate = new Date('2023-11-18'); 
   var today = new Date();
 
   var specialButton = document.getElementById('e');
@@ -147,7 +403,7 @@ document.addEventListener("DOMContentLoaded", function aClick() { //5
 });
 
 document.addEventListener("DOMContentLoaded", function aClick() { //2
-  var specialDate = new Date('2023-12-02'); 
+  var specialDate = new Date('2023-11-18'); 
   var today = new Date();
 
   var specialButton = document.getElementById('b');
@@ -162,7 +418,7 @@ document.addEventListener("DOMContentLoaded", function aClick() { //2
 });
 
 document.addEventListener("DOMContentLoaded", function aClick() { //14
-  var specialDate = new Date('2023-12-14'); 
+  var specialDate = new Date('2023-11-18'); 
   var today = new Date();
 
   var specialButton = document.getElementById('n');
@@ -177,7 +433,7 @@ document.addEventListener("DOMContentLoaded", function aClick() { //14
 });
 
 document.addEventListener("DOMContentLoaded", function aClick() { //4
-  var specialDate = new Date('2023-12-04'); 
+  var specialDate = new Date('2023-11-18'); 
   var today = new Date();
 
   var specialButton = document.getElementById('d');
@@ -192,7 +448,7 @@ document.addEventListener("DOMContentLoaded", function aClick() { //4
 });
 
 document.addEventListener("DOMContentLoaded", function aClick() { //8
-  var specialDate = new Date('2023-12-08'); 
+  var specialDate = new Date('2023-11-18'); 
   var today = new Date();
 
   var specialButton = document.getElementById('h');
@@ -207,7 +463,7 @@ document.addEventListener("DOMContentLoaded", function aClick() { //8
 });
 
 document.addEventListener("DOMContentLoaded", function aClick() { //6
-  var specialDate = new Date('2023-12-06'); 
+  var specialDate = new Date('2023-11-18'); 
   var today = new Date();
 
   var specialButton = document.getElementById('f');
@@ -222,7 +478,7 @@ document.addEventListener("DOMContentLoaded", function aClick() { //6
 });
 
 document.addEventListener("DOMContentLoaded", function aClick() { //3
-  var specialDate = new Date('2023-12-03'); 
+  var specialDate = new Date('2023-11-18'); 
   var today = new Date();
 
   var specialButton = document.getElementById('c');
@@ -237,7 +493,7 @@ document.addEventListener("DOMContentLoaded", function aClick() { //3
 });
 
 document.addEventListener("DOMContentLoaded", function aClick() { //24
-  var specialDate = new Date('2023-12-24'); 
+  var specialDate = new Date('2023-11-18'); 
   var today = new Date();
 
   var specialButton = document.getElementById('x');
@@ -252,7 +508,7 @@ document.addEventListener("DOMContentLoaded", function aClick() { //24
 });
 
 document.addEventListener("DOMContentLoaded", function aClick() { //11
-  var specialDate = new Date('2023-12-11'); 
+  var specialDate = new Date('2023-11-18'); 
   var today = new Date();
 
   var specialButton = document.getElementById('k');
@@ -267,7 +523,7 @@ document.addEventListener("DOMContentLoaded", function aClick() { //11
 });
 
 document.addEventListener("DOMContentLoaded", function aClick() { //10
-  var specialDate = new Date('2023-12-10'); 
+  var specialDate = new Date('2023-11-18'); 
   var today = new Date();
 
   var specialButton = document.getElementById('j');
@@ -282,7 +538,7 @@ document.addEventListener("DOMContentLoaded", function aClick() { //10
 });
 
 document.addEventListener("DOMContentLoaded", function aClick() { //15
-  var specialDate = new Date('2023-12-15'); 
+  var specialDate = new Date('2023-11-18'); 
   var today = new Date();
 
   var specialButton = document.getElementById('o');
@@ -297,7 +553,7 @@ document.addEventListener("DOMContentLoaded", function aClick() { //15
 });
 
 document.addEventListener("DOMContentLoaded", function aClick() { //7
-  var specialDate = new Date('2023-12-07'); 
+  var specialDate = new Date('2023-11-18'); 
   var today = new Date();
 
   var specialButton = document.getElementById('g');
@@ -312,7 +568,7 @@ document.addEventListener("DOMContentLoaded", function aClick() { //7
 });
 
 document.addEventListener("DOMContentLoaded", function aClick() { //13
-  var specialDate = new Date('2023-12-13'); 
+  var specialDate = new Date('2023-11-18'); 
   var today = new Date();
 
   var specialButton = document.getElementById('m');
@@ -327,7 +583,7 @@ document.addEventListener("DOMContentLoaded", function aClick() { //13
 });
 
 document.addEventListener("DOMContentLoaded", function aClick() { //12
-  var specialDate = new Date('2023-12-12'); 
+  var specialDate = new Date('2023-11-18'); 
   var today = new Date();
 
   var specialButton = document.getElementById('l');
@@ -342,7 +598,7 @@ document.addEventListener("DOMContentLoaded", function aClick() { //12
 });
 
 document.addEventListener("DOMContentLoaded", function aClick() { //16
-  var specialDate = new Date('2023-12-16'); 
+  var specialDate = new Date('2023-11-18'); 
   var today = new Date();
 
   var specialButton = document.getElementById('p');
@@ -357,7 +613,7 @@ document.addEventListener("DOMContentLoaded", function aClick() { //16
 });
 
 document.addEventListener("DOMContentLoaded", function aClick() { //21
-  var specialDate = new Date('2023-12-21'); 
+  var specialDate = new Date('2023-11-18'); 
   var today = new Date();
 
   var specialButton = document.getElementById('u');
@@ -372,7 +628,7 @@ document.addEventListener("DOMContentLoaded", function aClick() { //21
 });
 
 document.addEventListener("DOMContentLoaded", function aClick() { //22
-  var specialDate = new Date('2023-12-22'); 
+  var specialDate = new Date('2023-11-18'); 
   var today = new Date();
 
   var specialButton = document.getElementById('v');
@@ -387,7 +643,7 @@ document.addEventListener("DOMContentLoaded", function aClick() { //22
 });
 
 document.addEventListener("DOMContentLoaded", function aClick() { //23
-  var specialDate = new Date('2023-12-23'); 
+  var specialDate = new Date('2023-11-18'); 
   var today = new Date();
 
   var specialButton = document.getElementById('w');
@@ -402,7 +658,7 @@ document.addEventListener("DOMContentLoaded", function aClick() { //23
 });
 
 document.addEventListener("DOMContentLoaded", function aClick() { //18
-  var specialDate = new Date('2023-12-18'); 
+  var specialDate = new Date('2023-11-18'); 
   var today = new Date();
 
   var specialButton = document.getElementById('r');
@@ -417,7 +673,7 @@ document.addEventListener("DOMContentLoaded", function aClick() { //18
 });
 
 document.addEventListener("DOMContentLoaded", function aClick() { //19
-  var specialDate = new Date('2023-12-19'); 
+  var specialDate = new Date('2023-11-18'); 
   var today = new Date();
 
   var specialButton = document.getElementById('s');
