@@ -1,20 +1,22 @@
-function aClick() { // 1.
-  
-    var item1 = document.getElementById("item1");
-  
-    // Hozzáadja az "opened" osztályt, ami elindítja az animációt
-    item1.classList.add("opened");
+function aClick() {
+  // 1.
 
-    if (item.classList.contains("opened")) {
-      return;
-    }
-  
-    // Távolítsa el az eseménykezelőt, hogy ne lehessen újra kattintani
-    document.getElementById("a").onclick = null;
+  var item1 = document.getElementById("item1");
+
+  // Hozzáadja az "opened" osztályt, ami elindítja az animációt
+  item1.classList.add("opened");
+
+  if (item.classList.contains("opened")) {
+    return;
+  }
+
+  // Távolítsa el az eseménykezelőt, hogy ne lehessen újra kattintani
+  document.getElementById("a").onclick = null;
 }
-function qClick(){ // 17.
+function qClick() {
+  // 17.
   var item2 = document.getElementById("item2");
-  
+
   // Hozzáadja az "opened" osztályt, ami elindítja az animációt
   item2.classList.add("opened");
 
@@ -25,9 +27,10 @@ function qClick(){ // 17.
   // Távolítsa el az eseménykezelőt, hogy ne lehessen újra kattintani
   document.getElementById("q").onclick = null;
 }
-function tClick(){ // 20.
+function tClick() {
+  // 20.
   var item3 = document.getElementById("item3");
-  
+
   // Hozzáadja az "opened" osztályt, ami elindítja az animációt
   item3.classList.add("opened");
 
@@ -38,9 +41,10 @@ function tClick(){ // 20.
   // Távolítsa el az eseménykezelőt, hogy ne lehessen újra kattintani
   document.getElementById("t").onclick = null;
 }
-function iClick(){ // 9.
+function iClick() {
+  // 9.
   var item4 = document.getElementById("item4");
-  
+
   // Hozzáadja az "opened" osztályt, ami elindítja az animációt
   item4.classList.add("opened");
 
@@ -51,9 +55,10 @@ function iClick(){ // 9.
   // Távolítsa el az eseménykezelőt, hogy ne lehessen újra kattintani
   document.getElementById("i").onclick = null;
 }
-function eClick(){ // 5.
+function eClick() {
+  // 5.
   var item5 = document.getElementById("item5");
-  
+
   // Hozzáadja az "opened" osztályt, ami elindítja az animációt
   item5.classList.add("opened");
 
@@ -63,24 +68,26 @@ function eClick(){ // 5.
 
   // Távolítsa el az eseménykezelőt, hogy ne lehessen újra kattintani
   document.getElementById("e").onclick = null;
-  }
-function bClick(){ // 2.
-    var item6 = document.getElementById("item6");
-  
-    // Ellenőrizzük, hogy az elem rendelkezik-e már az "opened" osztállyal
-    // Ha igen, akkor visszatérünk, hogy ne indítsuk újra az animációt
-    if (item6.classList.contains("opened")) {
-      return;
-    }
-  
-    // Hozzáadja az "opened" osztályt, ami elindítja az animációt
-    item6.classList.add("opened");
-    document.getElementById("b").onclick = null;
+}
+function bClick() {
+  // 2.
+  var item6 = document.getElementById("item6");
+
+  // Ellenőrizzük, hogy az elem rendelkezik-e már az "opened" osztállyal
+  // Ha igen, akkor visszatérünk, hogy ne indítsuk újra az animációt
+  if (item6.classList.contains("opened")) {
+    return;
   }
 
-function nClick(){ // 14.
+  // Hozzáadja az "opened" osztályt, ami elindítja az animációt
+  item6.classList.add("opened");
+  document.getElementById("b").onclick = null;
+}
+
+function nClick() {
+  // 14.
   var item7 = document.getElementById("item7");
-  
+
   // Hozzáadja az "opened" osztályt, ami elindítja az animációt
   item7.classList.add("opened");
 
@@ -91,9 +98,10 @@ function nClick(){ // 14.
   // Távolítsa el az eseménykezelőt, hogy ne lehessen újra kattintani
   document.getElementById("n").onclick = null;
 }
-function dClick(){ // 4.
+function dClick() {
+  // 4.
   var item8 = document.getElementById("item8");
-  
+
   // Hozzáadja az "opened" osztályt, ami elindítja az animációt
   item8.classList.add("opened");
 
@@ -104,9 +112,10 @@ function dClick(){ // 4.
   // Távolítsa el az eseménykezelőt, hogy ne lehessen újra kattintani
   document.getElementById("d").onclick = null;
 }
-function hClick(){ // 8.
+function hClick() {
+  // 8.
   var item9 = document.getElementById("item9");
-  
+
   // Hozzáadja az "opened" osztályt, ami elindítja az animációt
   item9.classList.add("opened");
 
@@ -116,11 +125,11 @@ function hClick(){ // 8.
 
   // Távolítsa el az eseménykezelőt, hogy ne lehessen újra kattintani
   document.getElementById("h").onclick = null;
-
 }
-function fClick(){ // 6.
+function fClick() {
+  // 6.
   var item10 = document.getElementById("item10");
-  
+
   // Hozzáadja az "opened" osztályt, ami elindítja az animációt
   item10.classList.add("opened");
 
@@ -131,9 +140,10 @@ function fClick(){ // 6.
   // Távolítsa el az eseménykezelőt, hogy ne lehessen újra kattintani
   document.getElementById("f").onclick = null;
 }
-function cClick(){ // 3.
+function cClick() {
+  // 3.
   var item11 = document.getElementById("item11");
-  
+
   // Hozzáadja az "opened" osztályt, ami elindítja az animációt
   item11.classList.add("opened");
 
@@ -144,9 +154,10 @@ function cClick(){ // 3.
   // Távolítsa el az eseménykezelőt, hogy ne lehessen újra kattintani
   document.getElementById("c").onclick = null;
 }
-function xClick(){ // 24.
+function xClick() {
+  // 24.
   var item12 = document.getElementById("item12");
-  
+
   // Hozzáadja az "opened" osztályt, ami elindítja az animációt
   item12.classList.add("opened");
 
@@ -157,9 +168,10 @@ function xClick(){ // 24.
   // Távolítsa el az eseménykezelőt, hogy ne lehessen újra kattintani
   document.getElementById("x").onclick = null;
 }
-function kClick(){ // 11.
+function kClick() {
+  // 11.
   var item13 = document.getElementById("item13");
-  
+
   // Hozzáadja az "opened" osztályt, ami elindítja az animációt
   item13.classList.add("opened");
 
@@ -170,9 +182,10 @@ function kClick(){ // 11.
   // Távolítsa el az eseménykezelőt, hogy ne lehessen újra kattintani
   document.getElementById("k").onclick = null;
 }
-function jClick(){ // 10.
+function jClick() {
+  // 10.
   var item14 = document.getElementById("item14");
-  
+
   // Hozzáadja az "opened" osztályt, ami elindítja az animációt
   item14.classList.add("opened");
 
@@ -183,9 +196,10 @@ function jClick(){ // 10.
   // Távolítsa el az eseménykezelőt, hogy ne lehessen újra kattintani
   document.getElementById("j").onclick = null;
 }
-function oClick(){ // 15.
+function oClick() {
+  // 15.
   var item15 = document.getElementById("item15");
-  
+
   // Hozzáadja az "opened" osztályt, ami elindítja az animációt
   item15.classList.add("opened");
 
@@ -196,9 +210,10 @@ function oClick(){ // 15.
   // Távolítsa el az eseménykezelőt, hogy ne lehessen újra kattintani
   document.getElementById("o").onclick = null;
 }
-function gClick(){ // 7.
+function gClick() {
+  // 7.
   var item16 = document.getElementById("item16");
-  
+
   // Hozzáadja az "opened" osztályt, ami elindítja az animációt
   item16.classList.add("opened");
 
@@ -209,9 +224,10 @@ function gClick(){ // 7.
   // Távolítsa el az eseménykezelőt, hogy ne lehessen újra kattintani
   document.getElementById("g").onclick = null;
 }
-function cClick(){ // 3.
+function cClick() {
+  // 3.
   var item11 = document.getElementById("item11");
-  
+
   // Hozzáadja az "opened" osztályt, ami elindítja az animációt
   item11.classList.add("opened");
 
@@ -222,9 +238,10 @@ function cClick(){ // 3.
   // Távolítsa el az eseménykezelőt, hogy ne lehessen újra kattintani
   document.getElementById("c").onclick = null;
 }
-function mClick(){ // 13.
+function mClick() {
+  // 13.
   var item17 = document.getElementById("item17");
-  
+
   // Hozzáadja az "opened" osztályt, ami elindítja az animációt
   item17.classList.add("opened");
 
@@ -235,9 +252,10 @@ function mClick(){ // 13.
   // Távolítsa el az eseménykezelőt, hogy ne lehessen újra kattintani
   document.getElementById("m").onclick = null;
 }
-function lClick(){ // 12.
+function lClick() {
+  // 12.
   var item18 = document.getElementById("item18");
-  
+
   // Hozzáadja az "opened" osztályt, ami elindítja az animációt
   item18.classList.add("opened");
 
@@ -248,9 +266,10 @@ function lClick(){ // 12.
   // Távolítsa el az eseménykezelőt, hogy ne lehessen újra kattintani
   document.getElementById("l").onclick = null;
 }
-function pClick(){ // 16.
+function pClick() {
+  // 16.
   var item19 = document.getElementById("item19");
-  
+
   // Hozzáadja az "opened" osztályt, ami elindítja az animációt
   item19.classList.add("opened");
 
@@ -261,9 +280,10 @@ function pClick(){ // 16.
   // Távolítsa el az eseménykezelőt, hogy ne lehessen újra kattintani
   document.getElementById("p").onclick = null;
 }
-function uClick(){ // 21.
+function uClick() {
+  // 21.
   var item20 = document.getElementById("item20");
-  
+
   // Hozzáadja az "opened" osztályt, ami elindítja az animációt
   item20.classList.add("opened");
 
@@ -274,9 +294,10 @@ function uClick(){ // 21.
   // Távolítsa el az eseménykezelőt, hogy ne lehessen újra kattintani
   document.getElementById("u").onclick = null;
 }
-function vClick(){ // 22.
+function vClick() {
+  // 22.
   var item21 = document.getElementById("item21");
-  
+
   // Hozzáadja az "opened" osztályt, ami elindítja az animációt
   item21.classList.add("opened");
 
@@ -287,9 +308,10 @@ function vClick(){ // 22.
   // Távolítsa el az eseménykezelőt, hogy ne lehessen újra kattintani
   document.getElementById("v").onclick = null;
 }
-function wClick(){ // 23.
+function wClick() {
+  // 23.
   var item22 = document.getElementById("item22");
-  
+
   // Hozzáadja az "opened" osztályt, ami elindítja az animációt
   item22.classList.add("opened");
 
@@ -300,9 +322,10 @@ function wClick(){ // 23.
   // Távolítsa el az eseménykezelőt, hogy ne lehessen újra kattintani
   document.getElementById("w").onclick = null;
 }
-function rClick(){ // 18.
+function rClick() {
+  // 18.
   var item23 = document.getElementById("item23");
-  
+
   // Hozzáadja az "opened" osztályt, ami elindítja az animációt
   item23.classList.add("opened");
 
@@ -313,9 +336,10 @@ function rClick(){ // 18.
   // Távolítsa el az eseménykezelőt, hogy ne lehessen újra kattintani
   document.getElementById("r").onclick = null;
 }
-function sClick(){ // 19.
+function sClick() {
+  // 19.
   var item24 = document.getElementById("item24");
-  
+
   // Hozzáadja az "opened" osztályt, ami elindítja az animációt
   item24.classList.add("opened");
 
@@ -327,362 +351,338 @@ function sClick(){ // 19.
   document.getElementById("s").onclick = null;
 }
 
-document.addEventListener("DOMContentLoaded", function aClick() { //1
-  var specialDate = new Date('2023-11-18'); 
+document.addEventListener("DOMContentLoaded", function aClick() {
+  //1
+  var specialDate = new Date("2023-12-01");
   var today = new Date();
 
-  var specialButton = document.getElementById('a');
+  var specialButton = document.getElementById("a");
 
   if (today.toDateString() === specialDate.toDateString()) {
-    
   } else {
-    
-    specialButton.classList.remove('clickable');
-    specialButton.setAttribute('disabled', 'disabled');
+    specialButton.classList.remove("clickable");
+    specialButton.setAttribute("disabled", "disabled");
   }
 });
 
-document.addEventListener("DOMContentLoaded", function qClick() { //17
-  var specialDate = new Date('2023-11-18'); 
+document.addEventListener("DOMContentLoaded", function qClick() {
+  //17
+  var specialDate = new Date("2023-12-17");
   var today = new Date();
 
-  var specialButton = document.getElementById('q');
+  var specialButton = document.getElementById("q");
 
   if (today.toDateString() === specialDate.toDateString()) {
-    
   } else {
-    
-    specialButton.classList.remove('clickable');
-    specialButton.setAttribute('disabled', 'disabled');
+    specialButton.classList.remove("clickable");
+    specialButton.setAttribute("disabled", "disabled");
   }
 });
 
-document.addEventListener("DOMContentLoaded", function aClick() { //20
-  var specialDate = new Date('2023-11-18'); 
+document.addEventListener("DOMContentLoaded", function aClick() {
+  //20
+  var specialDate = new Date("2023-12-20");
   var today = new Date();
 
-  var specialButton = document.getElementById('t');
+  var specialButton = document.getElementById("t");
 
   if (today.toDateString() === specialDate.toDateString()) {
-    
   } else {
-    
-    specialButton.classList.remove('clickable');
-    specialButton.setAttribute('disabled', 'disabled');
+    specialButton.classList.remove("clickable");
+    specialButton.setAttribute("disabled", "disabled");
   }
 });
 
-document.addEventListener("DOMContentLoaded", function aClick() { //9
-  var specialDate = new Date('2023-11-18'); 
+document.addEventListener("DOMContentLoaded", function aClick() {
+  //9
+  var specialDate = new Date("2023-12-09");
   var today = new Date();
 
-  var specialButton = document.getElementById('i');
+  var specialButton = document.getElementById("i");
 
   if (today.toDateString() === specialDate.toDateString()) {
-    
   } else {
-    
-    specialButton.classList.remove('clickable');
-    specialButton.setAttribute('disabled', 'disabled');
+    specialButton.classList.remove("clickable");
+    specialButton.setAttribute("disabled", "disabled");
   }
 });
 
-document.addEventListener("DOMContentLoaded", function aClick() { //5
-  var specialDate = new Date('2023-11-18'); 
+document.addEventListener("DOMContentLoaded", function aClick() {
+  //5
+  var specialDate = new Date("2023-12-05");
   var today = new Date();
 
-  var specialButton = document.getElementById('e');
+  var specialButton = document.getElementById("e");
 
   if (today.toDateString() === specialDate.toDateString()) {
-    
   } else {
-    
-    specialButton.classList.remove('clickable');
-    specialButton.setAttribute('disabled', 'disabled');
+    specialButton.classList.remove("clickable");
+    specialButton.setAttribute("disabled", "disabled");
   }
 });
 
-document.addEventListener("DOMContentLoaded", function aClick() { //2
-  var specialDate = new Date('2023-11-18'); 
+document.addEventListener("DOMContentLoaded", function aClick() {
+  //2
+  var specialDate = new Date("2023-12-02");
   var today = new Date();
 
-  var specialButton = document.getElementById('b');
+  var specialButton = document.getElementById("b");
 
   if (today.toDateString() === specialDate.toDateString()) {
-    
   } else {
-    
-    specialButton.classList.remove('clickable');
-    specialButton.setAttribute('disabled', 'disabled');
+    specialButton.classList.remove("clickable");
+    specialButton.setAttribute("disabled", "disabled");
   }
 });
 
-document.addEventListener("DOMContentLoaded", function aClick() { //14
-  var specialDate = new Date('2023-11-18'); 
+document.addEventListener("DOMContentLoaded", function aClick() {
+  //14
+  var specialDate = new Date("2023-12-14");
   var today = new Date();
 
-  var specialButton = document.getElementById('n');
+  var specialButton = document.getElementById("n");
 
   if (today.toDateString() === specialDate.toDateString()) {
-    
   } else {
-    
-    specialButton.classList.remove('clickable');
-    specialButton.setAttribute('disabled', 'disabled');
+    specialButton.classList.remove("clickable");
+    specialButton.setAttribute("disabled", "disabled");
   }
 });
 
-document.addEventListener("DOMContentLoaded", function aClick() { //4
-  var specialDate = new Date('2023-11-18'); 
+document.addEventListener("DOMContentLoaded", function aClick() {
+  //4
+  var specialDate = new Date("2023-12-04");
   var today = new Date();
 
-  var specialButton = document.getElementById('d');
+  var specialButton = document.getElementById("d");
 
   if (today.toDateString() === specialDate.toDateString()) {
-    
   } else {
-    
-    specialButton.classList.remove('clickable');
-    specialButton.setAttribute('disabled', 'disabled');
+    specialButton.classList.remove("clickable");
+    specialButton.setAttribute("disabled", "disabled");
   }
 });
 
-document.addEventListener("DOMContentLoaded", function aClick() { //8
-  var specialDate = new Date('2023-11-18'); 
+document.addEventListener("DOMContentLoaded", function aClick() {
+  //8
+  var specialDate = new Date("2023-12-08");
   var today = new Date();
 
-  var specialButton = document.getElementById('h');
+  var specialButton = document.getElementById("h");
 
   if (today.toDateString() === specialDate.toDateString()) {
-    
   } else {
-    
-    specialButton.classList.remove('clickable');
-    specialButton.setAttribute('disabled', 'disabled');
+    specialButton.classList.remove("clickable");
+    specialButton.setAttribute("disabled", "disabled");
   }
 });
 
-document.addEventListener("DOMContentLoaded", function aClick() { //6
-  var specialDate = new Date('2023-11-18'); 
+document.addEventListener("DOMContentLoaded", function aClick() {
+  //6
+  var specialDate = new Date("2023-12-06");
   var today = new Date();
 
-  var specialButton = document.getElementById('f');
+  var specialButton = document.getElementById("f");
 
   if (today.toDateString() === specialDate.toDateString()) {
-    
   } else {
-    
-    specialButton.classList.remove('clickable');
-    specialButton.setAttribute('disabled', 'disabled');
+    specialButton.classList.remove("clickable");
+    specialButton.setAttribute("disabled", "disabled");
   }
 });
 
-document.addEventListener("DOMContentLoaded", function aClick() { //3
-  var specialDate = new Date('2023-11-18'); 
+document.addEventListener("DOMContentLoaded", function aClick() {
+  //3
+  var specialDate = new Date("2023-12-03");
   var today = new Date();
 
-  var specialButton = document.getElementById('c');
+  var specialButton = document.getElementById("c");
 
   if (today.toDateString() === specialDate.toDateString()) {
-    
   } else {
-    
-    specialButton.classList.remove('clickable');
-    specialButton.setAttribute('disabled', 'disabled');
+    specialButton.classList.remove("clickable");
+    specialButton.setAttribute("disabled", "disabled");
   }
 });
 
-document.addEventListener("DOMContentLoaded", function aClick() { //24
-  var specialDate = new Date('2023-11-18'); 
+document.addEventListener("DOMContentLoaded", function aClick() {
+  //24
+  var specialDate = new Date("2023-12-24");
   var today = new Date();
 
-  var specialButton = document.getElementById('x');
+  var specialButton = document.getElementById("x");
 
   if (today.toDateString() === specialDate.toDateString()) {
-    
   } else {
-    
-    specialButton.classList.remove('clickable');
-    specialButton.setAttribute('disabled', 'disabled');
+    specialButton.classList.remove("clickable");
+    specialButton.setAttribute("disabled", "disabled");
   }
 });
 
-document.addEventListener("DOMContentLoaded", function aClick() { //11
-  var specialDate = new Date('2023-11-18'); 
+document.addEventListener("DOMContentLoaded", function aClick() {
+  //11
+  var specialDate = new Date("2023-12-11");
   var today = new Date();
 
-  var specialButton = document.getElementById('k');
+  var specialButton = document.getElementById("k");
 
   if (today.toDateString() === specialDate.toDateString()) {
-    
   } else {
-    
-    specialButton.classList.remove('clickable');
-    specialButton.setAttribute('disabled', 'disabled');
+    specialButton.classList.remove("clickable");
+    specialButton.setAttribute("disabled", "disabled");
   }
 });
 
-document.addEventListener("DOMContentLoaded", function aClick() { //10
-  var specialDate = new Date('2023-11-18'); 
+document.addEventListener("DOMContentLoaded", function aClick() {
+  //10
+  var specialDate = new Date("2023-12-10");
   var today = new Date();
 
-  var specialButton = document.getElementById('j');
+  var specialButton = document.getElementById("j");
 
   if (today.toDateString() === specialDate.toDateString()) {
-    
   } else {
-    
-    specialButton.classList.remove('clickable');
-    specialButton.setAttribute('disabled', 'disabled');
+    specialButton.classList.remove("clickable");
+    specialButton.setAttribute("disabled", "disabled");
   }
 });
 
-document.addEventListener("DOMContentLoaded", function aClick() { //15
-  var specialDate = new Date('2023-11-18'); 
+document.addEventListener("DOMContentLoaded", function aClick() {
+  //15
+  var specialDate = new Date("2023-12-15");
   var today = new Date();
 
-  var specialButton = document.getElementById('o');
+  var specialButton = document.getElementById("o");
 
   if (today.toDateString() === specialDate.toDateString()) {
-    
   } else {
-    
-    specialButton.classList.remove('clickable');
-    specialButton.setAttribute('disabled', 'disabled');
+    specialButton.classList.remove("clickable");
+    specialButton.setAttribute("disabled", "disabled");
   }
 });
 
-document.addEventListener("DOMContentLoaded", function aClick() { //7
-  var specialDate = new Date('2023-11-18'); 
+document.addEventListener("DOMContentLoaded", function aClick() {
+  //7
+  var specialDate = new Date("2023-12-07");
   var today = new Date();
 
-  var specialButton = document.getElementById('g');
+  var specialButton = document.getElementById("g");
 
   if (today.toDateString() === specialDate.toDateString()) {
-    
   } else {
-    
-    specialButton.classList.remove('clickable');
-    specialButton.setAttribute('disabled', 'disabled');
+    specialButton.classList.remove("clickable");
+    specialButton.setAttribute("disabled", "disabled");
   }
 });
 
-document.addEventListener("DOMContentLoaded", function aClick() { //13
-  var specialDate = new Date('2023-11-18'); 
+document.addEventListener("DOMContentLoaded", function aClick() {
+  //13
+  var specialDate = new Date("2023-12-13");
   var today = new Date();
 
-  var specialButton = document.getElementById('m');
+  var specialButton = document.getElementById("m");
 
   if (today.toDateString() === specialDate.toDateString()) {
-    
   } else {
-    
-    specialButton.classList.remove('clickable');
-    specialButton.setAttribute('disabled', 'disabled');
+    specialButton.classList.remove("clickable");
+    specialButton.setAttribute("disabled", "disabled");
   }
 });
 
-document.addEventListener("DOMContentLoaded", function aClick() { //12
-  var specialDate = new Date('2023-11-18'); 
+document.addEventListener("DOMContentLoaded", function aClick() {
+  //12
+  var specialDate = new Date("2023-12-12");
   var today = new Date();
 
-  var specialButton = document.getElementById('l');
+  var specialButton = document.getElementById("l");
 
   if (today.toDateString() === specialDate.toDateString()) {
-    
   } else {
-    
-    specialButton.classList.remove('clickable');
-    specialButton.setAttribute('disabled', 'disabled');
+    specialButton.classList.remove("clickable");
+    specialButton.setAttribute("disabled", "disabled");
   }
 });
 
-document.addEventListener("DOMContentLoaded", function aClick() { //16
-  var specialDate = new Date('2023-11-18'); 
+document.addEventListener("DOMContentLoaded", function aClick() {
+  //16
+  var specialDate = new Date("2023-12-16");
   var today = new Date();
 
-  var specialButton = document.getElementById('p');
+  var specialButton = document.getElementById("p");
 
   if (today.toDateString() === specialDate.toDateString()) {
-    
   } else {
-    
-    specialButton.classList.remove('clickable');
-    specialButton.setAttribute('disabled', 'disabled');
+    specialButton.classList.remove("clickable");
+    specialButton.setAttribute("disabled", "disabled");
   }
 });
 
-document.addEventListener("DOMContentLoaded", function aClick() { //21
-  var specialDate = new Date('2023-11-18'); 
+document.addEventListener("DOMContentLoaded", function aClick() {
+  //21
+  var specialDate = new Date("2023-12-21");
   var today = new Date();
 
-  var specialButton = document.getElementById('u');
+  var specialButton = document.getElementById("u");
 
   if (today.toDateString() === specialDate.toDateString()) {
-    
   } else {
-    
-    specialButton.classList.remove('clickable');
-    specialButton.setAttribute('disabled', 'disabled');
+    specialButton.classList.remove("clickable");
+    specialButton.setAttribute("disabled", "disabled");
   }
 });
 
-document.addEventListener("DOMContentLoaded", function aClick() { //22
-  var specialDate = new Date('2023-11-18'); 
+document.addEventListener("DOMContentLoaded", function aClick() {
+  //22
+  var specialDate = new Date("2023-12-22");
   var today = new Date();
 
-  var specialButton = document.getElementById('v');
+  var specialButton = document.getElementById("v");
 
   if (today.toDateString() === specialDate.toDateString()) {
-    
   } else {
-    
-    specialButton.classList.remove('clickable');
-    specialButton.setAttribute('disabled', 'disabled');
+    specialButton.classList.remove("clickable");
+    specialButton.setAttribute("disabled", "disabled");
   }
 });
 
-document.addEventListener("DOMContentLoaded", function aClick() { //23
-  var specialDate = new Date('2023-11-18'); 
+document.addEventListener("DOMContentLoaded", function aClick() {
+  //23
+  var specialDate = new Date("2023-12-23");
   var today = new Date();
 
-  var specialButton = document.getElementById('w');
+  var specialButton = document.getElementById("w");
 
   if (today.toDateString() === specialDate.toDateString()) {
-    
   } else {
-    
-    specialButton.classList.remove('clickable');
-    specialButton.setAttribute('disabled', 'disabled');
+    specialButton.classList.remove("clickable");
+    specialButton.setAttribute("disabled", "disabled");
   }
 });
 
-document.addEventListener("DOMContentLoaded", function aClick() { //18
-  var specialDate = new Date('2023-11-18'); 
+document.addEventListener("DOMContentLoaded", function aClick() {
+  //18
+  var specialDate = new Date("2023-12-18");
   var today = new Date();
 
-  var specialButton = document.getElementById('r');
+  var specialButton = document.getElementById("r");
 
   if (today.toDateString() === specialDate.toDateString()) {
-    
   } else {
-    
-    specialButton.classList.remove('clickable');
-    specialButton.setAttribute('disabled', 'disabled');
+    specialButton.classList.remove("clickable");
+    specialButton.setAttribute("disabled", "disabled");
   }
 });
 
-document.addEventListener("DOMContentLoaded", function aClick() { //19
-  var specialDate = new Date('2023-11-18'); 
+document.addEventListener("DOMContentLoaded", function aClick() {
+  //19
+  var specialDate = new Date("2023-12-19");
   var today = new Date();
 
-  var specialButton = document.getElementById('s');
+  var specialButton = document.getElementById("s");
 
   if (today.toDateString() === specialDate.toDateString()) {
-    
   } else {
-    
-    specialButton.classList.remove('clickable');
-    specialButton.setAttribute('disabled', 'disabled');
+    specialButton.classList.remove("clickable");
+    specialButton.setAttribute("disabled", "disabled");
   }
 });
