@@ -15,43 +15,138 @@
 }
 
 .item{
-  background-color: #b4deec;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  border: 1px solid black;
+  border-radius: 30px;
+  width: 100%;
+  height: 100%;
   cursor: pointer;
   transform-style: preserve-3d;
+  user-select: none;
+}
+
+.hide{
+  display: none;
+}
+
+.door{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+  background-color: rgba(164, 209, 224, .5);
+}
+
+.leftDoor{
+  display: flex;
+  width: 50%;
+  height: 100%;
+  align-items: center;
+  justify-content: right;
+  border-radius: 30px 0 0 30px;
+  background-color: rgba(164, 209, 224, .5);
+}
+
+.rightDoor{
+  display: flex;
+  width: 50%;
+  height: 100%;
+  align-items: center;
+  justify-content: left;
+  border-radius: 0 30px 30px 0;
+  background-color: rgba(164, 209, 224, .5);
 }
 
 @keyframes openToLeft {
-  0% {
+  from {
     transform: rotateY(0deg);
+    background-color: rgba(164, 209, 224, .5);
   }
-  100% {
+  to {
     transform: rotateY(-105deg);
+    background-color: rgba(164, 209, 224, 1);
   }
 }
 
 @keyframes openToDown {
   from {
     transform: rotateX(0deg);
+    background-color: rgba(164, 209, 224, .5);
   }
   to {
     transform: rotateX(-130deg);
+    background-color: rgba(164, 209, 224, 1);
   }
 }
 
-@keyframes openToDouble {
-  /*Majd html meg lesz akkor jön ez*/
+@keyframes openToDoubleLeft {
+  from{
+    transform: rotateY(0deg);
+    background-color: rgba(164, 209, 224, .5);
+  }
+  to{
+    transform: rotateY(-105deg);
+    background-color: rgba(164, 209, 224, 1);
+  }
 }
 
-.small.opened{
+@keyframes openToDoubleRight {
+  from{
+    transform: rotateY(0deg);
+    background-color: rgba(164, 209, 224, .5);
+  }
+  to{
+    transform: rotateY(105deg);
+    background-color: rgba(164, 209, 224, 1);
+  }
+}
+
+.small.opened > .door{
   transform-origin: left;
   animation: openToLeft .5s ease-in-out forwards;
 }
 
-.medium.opened{
+.medium.opened > .door{
   transform-origin: bottom;
   animation: openToDown .5s ease-in-out forwards;
 }
 
-.large.opened{
-  /*Majd*/
+.large.opened > .leftDoor{
+  transform-origin: left;
+  animation: openToDoubleLeft .5s ease-in-out forwards;
+}
+
+.large.opened > .rightDoor{
+  transform-origin: right;
+  animation: openToDoubleRight .5s ease-in-out forwards;
+}
+
+/*Done*/
+.small.done > .door{
+  transform-origin: left;
+  transform: rotateY(-20deg);
+  background-color: rgba(164, 209, 224, 1);
+}
+
+.medium.done > .door{
+  transform-origin: bottom;
+  transform: rotateX(-30deg);
+  background-color: rgba(164, 209, 224, 1);
+}
+
+.large.done > .leftDoor{
+  transform-origin: left;
+  transform: rotateY(-30deg);
+  background-color: rgba(164, 209, 224, 1);
+}
+
+.large.done > .rightDoor{
+  transform-origin: right;
+  transform: rotateY(30deg);
+  background-color: rgba(164, 209, 224, 1);
 }
