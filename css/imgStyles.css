@@ -1,0 +1,48 @@
+img{
+    position: absolute;
+    width: 100px;
+}
+
+.imgStar{
+    top: 0px;
+    left: 5px;
+    width: 70px;
+}
+
+.imgTree{
+    bottom: 0px;
+    right: 10px;
+}
+
+.imgBall{
+    right: 0;
+}
+
+.imgPenguin{
+    right: -40px;
+    width: 200px;
+}
+
+.imgMiki{
+    left: 10px;
+    bottom: 0;
+    width: 100px;
+}
+
+.imgCat{
+    right: 0;
+    bottom: 0;
+    width: 75px;
+}
+
+.imgSnowhead{
+    left: 0;
+    bottom: 0;
+    width: 85px;
+}
+
+.imgDeer{
+    right: -14px;
+    bottom: -6px;
+    width: 80px;
+}
