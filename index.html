@@ -7,17 +7,91 @@
     <link rel="stylesheet" href="./css/calendarStyle.css">
     <link rel="stylesheet" href="./css/introStyle.css">
     <link rel="stylesheet" href="./css/imgStyles.css">
+    <link rel="stylesheet" href="./css/dayContent.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Wellfleet&display=swap" rel="stylesheet">
     <script src="./clickHandler.js" defer></script>
+    <script src="./logoSpin.js" defer></script>
+    <script src="./modal.js" defer></script>
     <title>Advent</title>
 </head>
 <body>
+    <div class="logo">
+        <img class="front" src="./images/sobFront.png">
+        <img class="back" src="./images/sobBack.png">
+    </div>
     <div id="introWrap">
         <h1><span class="underline">Szegedi SzB School of Business Technikum</span> adventi naptár a meghitt várakozáshoz!</h1>
         <p>Fogadjátok szeretettel ajándékunkat. Ez az adventi naptár szeretettel készült Csak Neked, annak, aki szeretettel olvassa. Minden nap nyiss ki egy ablakot, mindig az adott napon, ezzel készüljünk szívvel és lélekkel a karácsonyra. A naptár készítésében iskolánk valamennyi tanára és diákja közreműködött, hogy minél személyesebb legyen és minél inkább a szívekhez szóljon. Ezzel a kis ajándékkal hangolódjunk közösen karácsonyra Krisztus születésének ünnepére.</p>
     </div>
+    <dialog class="content">
+        <div class="grid">
+            <h1>SZÓLJON AZ IDEI ADVENT IS A SZERETETRŐL!</h1>
+            <div class="player">
+                <video controls>
+                    <source src="./videos/1_nap_Edina.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="overflow">
+                <p> 
+                    Tudod, az én ajándékom nem<br>
+                    kapható boltban.<br>
+                    Kicsi szívem szeretetét<br>
+                    összecsomagoltam.<br>
+                    Karácsonyig őrizgetem szívem közepében,<br>
+                    ám addig is csöpögtetem,<br>
+                    osztogatom szépen.<br>
+                    <br>
+                    Anyukámhoz, Apukámhoz szép<br>
+                    szavakkal szólok,<br>
+                    felvidítom a kedvüket, ha szívből<br>
+                    mosolygok.<br>
+                    Látom ám, hogy jobb a kedvük,<br>
+                    visszamosolyognak,<br>
+                    s nem kerítnek nagy feneket sok<br>
+                    apró dolognak.<br>
+                    <br>
+                    Testvéreim jókedvűek, a<br>
+                    kedvükben járok,<br>
+                    s szeretetet kapnak tőlem idén a<br>
+                    barátok.<br>
+                    A világ is megtisztulna, ha<br>
+                    kedvesek lennénk,<br>
+                    ha nem vásárolt holmikat,<br>
+                    ajándékot vennénk.<br>
+                    <br>
+                    A legfontosabb ajándékunk, a<br>
+                    figyelmünk lenne,<br>
+                    az időnket, a szívünket<br>
+                    od’adhatnánk benne.<br>
+                    Nem kellene sorban állni, s<br>
+                    kacatokat venni,<br>
+                    mert a szívünk képes csodás<br>
+                    dolgokat teremni.<br>
+                    <br>
+                    Mit szólnál egy öleléshez, egy<br>
+                    beszélgetéshez?<br>
+                    Ha mindenki elmondhatná mit<br>
+                    gondol, mit érez?<br>
+                    <br>
+                    Közös ének, közös játék, de<br>
+                    csodás is lenne,<br>
+                    apró öröm, nagy boldogság<br>
+                    csilloghatna benne.<br>
+                    <br>
+                    Év közben a szükségeset úgyis<br>
+                    meg kell venni,<br>
+                    csak egy dolgot felejtünk el,<br>
+                    őszintén szeretni.<br>
+                    Öltözködjön a szív fénybe szerte a<br>
+                    világon,<br>
+                    szóljon végre szeretetről idén a<br>
+                    karácsony!<br>
+                </p>
+            </div>
+        </div>
+    </dialog>
     <div id="wrapper">
         <div class="item small item1">
             <p class="hide">1</p>
@@ -143,8 +217,13 @@
                 <img class="imgDeer" src="./images/deer.png">
             </div>
         </div>
+
+        <div class="dayContent">
+            
+        </div>
     </div>
-    <footer>Az Online Kalendáriumot, Czető Ákos, Papp Kitti, Németh Kornél, Rácz Norbert, Rozsi László, Maksa Kamilla 2/14 Szft szakos hallgatók készítették.
+    <footer>
+        Az Online Kalendáriumot, Czető Ákos, Papp Kitti, Németh Kornél, Rácz Norbert, Rozsi László, Maksa Kamilla 2/14 Szft szakos hallgatók készítették.
     </footer>
 </body>
 </html>

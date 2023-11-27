@@ -5,6 +5,7 @@
 }
 
 #wrapper{
+  position: relative;
   box-shadow: 5px 5px 5px #8ab8c4;
   font-family: 'Anton', sans-serif;
   font-size: 50px;
@@ -16,6 +17,7 @@
 }
 
 .item{
+  z-index: 1;
   position: relative;
   display: flex;
   align-items: center;
@@ -36,6 +38,7 @@
 }
 
 .door{
+  z-index: 3;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -46,6 +49,7 @@
 }
 
 .leftDoor{
+  z-index: 3;
   display: flex;
   width: 50%;
   height: 100%;
@@ -56,6 +60,7 @@
 }
 
 .rightDoor{
+  z-index: 3;
   display: flex;
   width: 50%;
   height: 100%;
