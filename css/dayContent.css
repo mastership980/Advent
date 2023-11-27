@@ -1,17 +1,15 @@
-.content{
+.content[open]{
     margin: auto;
     padding: auto;
     font-family: 'Wellfleet', monospace;
     border-radius: 10px;
     box-shadow: 0px 0px 100px #809ca3;
     z-index: 3000;
-    color: black;
     background-color: #e3f3f7;
-    max-height: 80vh;
-}
-
-.content[open]{
+    max-height: 90vh;
+    max-width: 730px;
     animation: fade 0.5s ease-in-out normal;
+    cursor: default;
 }
 
 @keyframes fade {
@@ -26,11 +24,11 @@
 .player{
     display: flex;
     justify-content: center;
-    padding-block: 20px;
+    padding: 20px 40px 20px 40px;
 }
 
 .overflow{
-    max-height: 200px;
+    max-height: 300px;
     overflow-y: scroll;
 }
 
@@ -38,11 +36,73 @@
     font-size: 25px;
     text-align: center;
     text-wrap: balance;
+    color: #6b5d38;
 }
 
 .content h1{
+    text-align: center;
     font-size: 32px;
     padding: 10px;
+    color: #1f4d79;
+}
+
+span{
+    display: inline-block;
+}
+
+.bigBold{
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.poemHead{
+    margin-bottom: 20px;
+}
+
+.center{
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+}
+
+/*Day 2*/
+.content.contentDay2 p{
+    font-size: 20px;
+    text-align: justify;
+}
+
+.content.contentDay2 img{
+    position: static;
+    display: inline;
+    width: 400px;
+    float: left;
+    margin: 10px;
+}
+
+.content.contentDay2 .player video{
+    width: 100%;
+}
+
+.main{
+    margin: 20px;
+}
+
+/*Day 3*/
+.content.contentDay3 p{
+    font-size: 20px;
+    text-align: justify;
+}
+
+.content.contentDay3 img{
+    position: static;
+    display: inline;
+    width: 400px;
+    float: left;
+    margin: 10px;
+}
+
+.content.contentDay3 .player video{
+    width: 100%;
 }
 
 ::-webkit-scrollbar {
