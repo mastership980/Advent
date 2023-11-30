@@ -4,7 +4,7 @@ const today = new Date()
 const currentMonth = today.getMonth()
 const currentDay = today.getDate()
 
-const month = 10
+const month = 11
 let index = 0
 
 if(localStorage.getItem("isDone") === null || 
@@ -46,10 +46,6 @@ const interval = setInterval(() => {
       //Ha a mai nap és a div ben lévő szám eggyezik, 
       //és a hónap az December (JS hónapok azok 0 tól kezdődnek ezért 11 a December)
       //akkor fusson le
-      if (!item.children[1].open) {
-        item.children[1].showModal()
-        item.children[1].scrollTop = 0
-      }
       if(currentDay == item.firstElementChild.textContent.trim() && currentMonth == month)
       {
         //zIndex azért hogy amikor kinyílik ne legyen overlap
@@ -57,6 +53,11 @@ const interval = setInterval(() => {
         item.classList.add("opened")
         localStorage.setItem("isDone", true.toString())
         localStorage.setItem("savedDay", currentDay.toString())
+        if (!item.children[1].open) 
+        {
+          item.children[1].showModal()
+          item.children[1].scrollTop = 0
+        }
       }
       else
       {
