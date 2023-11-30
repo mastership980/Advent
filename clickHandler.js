@@ -1,8 +1,6 @@
 const items = document.querySelectorAll(".item")
 
-const a = Date.now()
-
-const today = new Date(a)
+const today = new Date()
 const currentMonth = today.getMonth()
 const currentDay = today.getDate()
 
