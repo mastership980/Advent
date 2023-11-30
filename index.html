@@ -3,88 +3,754 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./grid.css">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./static/css/grid.css">
+    <link rel="stylesheet" href="./static/css/calendarStyle.css">
+    <link rel="stylesheet" href="./static/css/introStyle.css">
+    <link rel="stylesheet" href="./static/css/imgStyles.css">
+    <link rel="stylesheet" href="./static/css/dayContent.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Wellfleet&display=swap" rel="stylesheet">
+    <script src="./clickHandler.js" defer></script>
     <title>Advent</title>
 </head>
 <body>
+    <div class="logo">
+        <img class="front" src="./static/images/sobFront.png">
+        <img class="back" src="./static/images/sobBack.png">
+    </div>
+    <div id="introWrap">
+        <h1><span class="underline">Szegedi SzB School of Business Technikum</span> adventi naptár a meghitt várakozáshoz!</h1>
+        <p>Fogadjátok szeretettel ajándékunkat. Ez az adventi naptár szeretettel készült Csak Neked, annak, aki szeretettel olvassa. Minden nap nyiss ki egy ablakot, mindig az adott napon, ezzel készüljünk szívvel és lélekkel a karácsonyra. A naptár készítésében iskolánk valamennyi tanára és diákja közreműködött, hogy minél személyesebb legyen és minél inkább a szívekhez szóljon. Ezzel a kis ajándékkal hangolódjunk közösen karácsonyra Krisztus születésének ünnepére.</p>
+    </div>
     <div id="wrapper">
-        <div class="item item1" id="item1" >
-            <button id="a" class="fill-div clickable" onclick="aClick()" >1</button>
+        <div class="item small item1">
+            <p class="hide">1</p>
+            <dialog class="content contentDay1">
+                <h1>SZÓLJON AZ IDEI ADVENT IS A SZERETETRŐL!</h1>
+                <div class="player">
+                    <video controls>
+                        <source src="./static/videos/1_nap_Edina.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="overflow">
+                    <p> 
+                        <span class="bigBold poemHead">Aranyosi Ervin: Szeretetről szóljon!</span><br>
+                        Tudod, az én ajándékom nem<br>
+                        kapható boltban.<br>
+                        Kicsi szívem szeretetét<br>
+                        összecsomagoltam.<br>
+                        Karácsonyig őrizgetem szívem közepében,<br>
+                        ám addig is csöpögtetem,<br>
+                        osztogatom szépen.<br>
+                        <br>
+                        Anyukámhoz, Apukámhoz szép<br>
+                        szavakkal szólok,<br>
+                        felvidítom a kedvüket, ha szívből<br>
+                        mosolygok.<br>
+                        Látom ám, hogy jobb a kedvük,<br>
+                        visszamosolyognak,<br>
+                        s nem kerítnek nagy feneket sok<br>
+                        apró dolognak.<br>
+                        <br>
+                        Testvéreim jókedvűek, a<br>
+                        kedvükben járok,<br>
+                        s szeretetet kapnak tőlem idén a<br>
+                        barátok.<br>
+                        A világ is megtisztulna, ha<br>
+                        kedvesek lennénk,<br>
+                        ha nem vásárolt holmikat,<br>
+                        ajándékot vennénk.<br>
+                        <br>
+                        A legfontosabb ajándékunk, a<br>
+                        figyelmünk lenne,<br>
+                        az időnket, a szívünket<br>
+                        od’adhatnánk benne.<br>
+                        Nem kellene sorban állni, s<br>
+                        kacatokat venni,<br>
+                        mert a szívünk képes csodás<br>
+                        dolgokat teremni.<br>
+                        <br>
+                        Mit szólnál egy öleléshez, egy<br>
+                        beszélgetéshez?<br>
+                        Ha mindenki elmondhatná mit<br>
+                        gondol, mit érez?<br>
+                        <br>
+                        Közös ének, közös játék, de<br>
+                        csodás is lenne,<br>
+                        apró öröm, nagy boldogság<br>
+                        csilloghatna benne.<br>
+                        <br>
+                        Év közben a szükségeset úgyis<br>
+                        meg kell venni,<br>
+                        csak egy dolgot felejtünk el,<br>
+                        őszintén szeretni.<br>
+                        Öltözködjön a szív fénybe szerte a<br>
+                        világon,<br>
+                        szóljon végre szeretetről idén a<br>
+                        karácsony!<br>
+                    </p>
+                </div>
+            </dialog>
+            <div class="door">1</div>
         </div>
-        <div class="item item2" id="item2">
-            <button id="q" class="fill-div clickable" onclick="qClick()" >17</button>
+        <div class="item large item2">
+            <p class="hide">17</p>
+            <div class="leftDoor">
+                <img class="imgStar" src="./static/images/star.png">
+                1
+            </div>
+            <div class="rightDoor">7</div>
         </div>
-        <div class="item item3" id="item3">
-            <button id="t" class="fill-div clickable" onclick="tClick()" >20</button>
+        <div class="item large item3">
+            <p class="hide">20</p>
+            <div class="leftDoor">2</div>
+            <div class="rightDoor">
+                0
+                <img class="imgTree" src="./static/images/tree.png">
+            </div>
         </div>
-        <div class="item item4" id="item4">
-            <button id="i" class="fill-div clickable" onclick="iClick()" >9</button>
+        <div class="item medium item4">
+            <p class="hide">9</p>
+            <dialog class="content contentDay9">
+                <h1>SÜTÉS UTÁN HA ELFÁRADTÁL,PIHENJ MEG EGY KICSIT, KUCKÓZZ BE ÉS NÉZZD MEG AZ EGYIK LEGSZEBB KARÁCSONYI FILMET</h1>
+                <div class="player">
+                    <video controls>
+                        <source src="./static/videos/1_nap_Edina.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </dialog>
+            <div class="door">9</div>
         </div>
-        <div class="item item5" id="item5">
-            <button id="e" class="fill-div clickable" onclick="eClick()" >5</button>
+        <div class="item medium item5">
+            <p class="hide">5</p>
+            <dialog class="content contentDay5">
+                <h1>Egy különleges Mikulás nap</h1>
+                <div class="main">
+                    <p> 
+                        <span class="bigBold poemHead">Érdekességek Mikulásról</span><br>
+                        A piros palástban,
+                        püspöksüvegben és pásztorbottal
+                        ajándékokat
+                        osztó Mikulás eredetileg
+                        a katolikus vallású
+                        vidékeken Szent Miklósnak, a (ma
+                        Törökország területén lévő)
+                        Lycia római provinciában
+                        fekvő Myra püspökének népies
+                        alakja. Szent Miklós a gyermekek
+                        és diákok védőszentje, ezért a
+                        későbbi korokban a népi
+                        vallásosság hatására kialakult
+                        ajándékosztó püspöksüveges
+                        Mikulás előképének tartják.
+                        A modern magyar néphagyomány
+                        szerint december 5. éjjelén
+                        – december 6. hajnalán a Mikulás
+                        meglátogatja a gyermekeket, s ha
+                        az elmúlt évben jól viselkedtek,
+                        kisebb ajándékot ad nekik. Ez a
+                        népszokás, azaz az ablakba kitett
+                        csizmákba ajándékot helyező
+                        titokzatos Mikulásjárás körülbelül
+                        egy évszázadra tekint vissza.
+                        <br>
+                        <br>
+                        <br>
+                        <span class="center">
+                            Mi is megemlékeztünk
+                            Mikulásról ehhez pedig egy
+                            különleges módot
+                            választottunk…. gyere és kukkants
+                            bele a napunkba:
+                        </span>
+                        <br>
+                        <br>
+                        <span class="center">REMÉLJÜK A TE CSIZMÁD SEM MARADT ÜRESEN!</span>
+                    </p>
+                </div>
+            </dialog>
+            <div class="door">5</div>
         </div>
-        <div class="item item6" id="item6">
-            <button id="b" class="fill-div clickable" onclick="bClick()" >2</button>
+        <div class="item small item6">
+            <p class="hide">2</p>
+            <dialog class="content contentDay2">
+                <h1>MIRE IS VÁRAKOZUNK ADVENT IDEJÉN?</h1>
+                <div class="main">
+                    <p> 
+                        <img src="./static/images/adventKoszoru.jpg">
+                        Advent a karácsonyt megelőző négy
+                        hetes időszak, amely az örömteli és
+                        meghitt készülődés, várakozás
+                        jegyében telik. A keresztények
+                        számára a karácsonyi ünnepkör
+                        advent első vasárnapjával kezdődik, és
+                        egészen vízkeresztig tart. Az advent
+                        eredete a IV. századig nyúlik vissza,
+                        és számos jelkép, valamint szokás,
+                        hagyomány kapcsolódik hozzá. Advent
+                        neve a latin eredetű adventus
+                        Domini kifejezésből származik,
+                        amelynek jelentése: az Úr érkezése.
+                        Az advent a keresztény kultúrkörben a
+                        karácsonyra – Krisztus születése
+                        ünnepére – való lelki felkészülést
+                        jelenti.
+                        <br>
+                        <br>
+                        Az adventi időszak, a karácsony
+                        (december 25.) előtti negyedik
+                        vasárnappal veszi kezdetét és
+                        karácsonyig tart. Más megfogalmazás
+                        szerint, Szent András apostol napjához
+                        (november 30.) legközelebb eső
+                        vasárnappal kezdődik, amely általában
+                        november 27. és december 3. közé
+                        esik, és négy héten keresztül tart.
+                        <br>
+                        <br>
+                        Az ünnep eredete, egészen az V-VI.
+                        századig nyúlik vissza, amikor még 40
+                        napig tartott, és szigorú böjttel volt
+                        összekötve (ez a hagyomány a XX.
+                        század közepén eltűnt). Ebben az
+                        időszakban lakodalmakat és más zajos
+                        mulatságokat nem tartottak, később
+                        VII. Gergely pápa négyben határozta
+                        meg az adventi vasárnapok a számát.
+                        <br>
+                        <br>
+                        A keleti (ortodox) keresztények ma is
+                        január 6-án ünneplik Jézus Krisztus
+                        születését. Advent a külső-belső
+                        készülődés és az örömteli várakozás
+                        jegyében telik. A karácsonyt megelőző
+                        időszakban feldíszítjük otthonunkat,
+                        beszerezzük, vagy saját kezűleg
+                        elkészítjük az ajándékokat, és felhívjuk
+                        a rég nem látott szeretteinket. Az
+                        advent azonban nem csak a
+                        külsőségekben nyilvánul meg, ez a
+                        reményteli várakozás és a lelki
+                        készülődés ideje is.
+                    </p>
+                </div>
+                <div class="player">
+                    <video controls>
+                        <source src="./static/videos/adventiGyertyaMese.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </dialog>
+            <div class="door">2</div>
         </div>
-        <div class="item item7" id="item7">
-            <button id="n" class="fill-div clickable" onclick="nClick()" >14</button>
+        <div class="item medium item7">
+            <p class="hide">14</p>
+            <div class="door">
+                14
+                <img class="imgBall" src="./static/images/ball.png">
+            </div>
         </div>
-        <div class="item item8" id="item8">
-            <button id="d" class="fill-div clickable" onclick="dClick()" >4</button>
+        <div class="item small item8">
+            <p class="hide">4</p>
+            <dialog class="content contentDay4">
+                <h1>TE MIRE VÁGYAKOZOL ADVENT IDEJÉN?</h1>
+                <div class="player">
+                    <video controls>
+                        <source src="./static/videos/1_nap_Edina.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="overflow">
+                    <p> 
+                        <span class="bigBold poemHead">Schrenk Éva: Várj reám…</span><br>
+                        „Várj reám, s én megjövök, <br>
+                        hogyha vársz nagyon.” <br>
+                        Mondta volt az Úristen <br>
+                        egy bíbor hajnalon. <br>
+                        Várj reám, s ember leszek, <br>
+                        hogy vonhassam igád. <br>
+                        Szenvedek, s meghalok érted, <br>
+                        mert meghallom imád. <br>
+                        Várj reám, s örülj nagyon, <br>
+                        mert e kisded én vagyok. <br>
+                        Kinek hatalmában áll <br>
+                        megmenteni téged, <br>
+                        s a szeretet az egyedüli ok. <br>
+                    </p>
+                </div>
+            </dialog>
+            <div class="door">4</div>
         </div>
-        <div class="item item9" id="item9">
-            <button id="h" class="fill-div clickable" onclick="hClick()" >8</button>
+        <div class="item small item9">
+            <p class="hide">8</p>
+            <dialog class="content contentDay8">
+                <h1>Éppen ideje hozzáfogni akarácsonyi mézeskalács készítéséhez, gyere és kisgyermekgondozó diákjainkkal együtt fogj hozzá Te is!</h1>
+                <div class="main">
+                    <p>
+                        <span class="bigBold poemHead center smaller">Ime a recept, aminek segítségével könnyedén elkészítheted az idei mézeskalácsodat!</span>
+                        <br>
+                        <br>
+                        HOZZÁVALÓK:
+                    </p>
+                        <ul>
+                            <li>50dkgliszt</li>
+                            <li>15dkgporcukor</li>
+                            <li>1ekmézeskalács fűszerkeverék</li>
+                            <li>1.5tkszódabikarbóna</li>
+                            <li>15dkgpuha vaj vagy margarin</li>
+                            <li>1.25dlméz</li>
+                            <li>1dbtojás</li>
+                            <li>0.5dbnarancs reszelt héja</li>
+                        </ul>
+                    <p>
+
+                        <br>
+                        <br>
+                        ELKÉSZÍTÉSE:
+                    </p>
+                        <ul>
+                            <li>A lisztet egy edénybe öntjük, és
+                            hozzáadjuk a porcukrot, a mézeskalács
+                            fűszerkeveréket (vagy fele-fele arányban
+                            őrölt fahéjat és szegfűszeget), a
+                            szódabikarbónát, és kézzel összekeverjük.</li>
+
+                            <li>Hozzáadjuk a margarint vagy a vajat,
+                            mézet, tojást és a narancs lereszelt héját,
+                            majd az egészet egynemű masszává
+                            gyúrjuk.</li>
+
+                            <li>A tésztát, a könnyebb kezelhetőség
+                            kedvéért, két részre osztjuk, majd az egyik
+                            felét lisztezett deszkán 4-5 mm vastagra
+                            nyújtjuk, és a kiválasztott formákkal
+                            kiszúrjuk. A leeső részeket újra
+                            összegyúrjuk, hozzátesszük a másik adag
+                            tésztához, és azt is kinyújtjuk, kiszaggatjuk.</li>
+
+                            <li>A figurákat sütőpapíros tepsire
+                            sorakoztatjuk egymástól kb. 2 cm
+                            távolságra, és 180 fokra előmelegített
+                            sütőben pontosan 10 percig sütjük, majd
+                            hagyjuk a tepsin kihűlni. A mézeskalácsok
+                            azonnal puhák, nem kell fémdobozban
+                            tárolni.</li>
+                        </ul>
+                </div>
+                <div class="player">
+                    <video controls>
+                        <source src="./static/videos/adventiGyertyaMese.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="imgHolder">
+                    <img src="./static/images/mezes1.png">
+                    <img src="./static/images/mezes2.png">
+                    <img src="./static/images/mezes3.png">
+                </div>
+            </dialog>
+            <div class="door">8</div>
         </div>
-        <div class="item item10" id="item10">
-            <button id="f" class="fill-div clickable" onclick="fClick()" >6</button>
+        <div class="item small item10">
+            <p class="hide">6</p>
+            <dialog class="content contentDay6">
+                <h1>KARÁCSONY A CSALÁD ÜNNEPE!</h1>
+                <div class="overflow">
+                    <p> 
+                        Gyorsan változó, ingergazdag
+                        világunkban ami még mindig
+                        állandó, hogy a karácsony a
+                        szeretteink köré épül, a család
+                        ünnepe, de miért is fontos
+                        különösen ebben az időszakban
+                        figyelni a családunkra,
+                        megmutatjuk, tartsatok velünk:
+                    </p>
+                </div>
+                <div class="player">
+                    <video controls>
+                        <source src="./static/videos/1_nap_Edina.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </dialog>
+            <div class="door">6</div>
         </div>
-        <div class="item item11" id="item11">
-            <button id="c" class="fill-div clickable" onclick="cClick()" >3</button>
+        <div class="item small item11">
+            <p class="hide">3</p>
+            <dialog class="content contentDay3">
+                <h1>ADVENTI KOSZORÚ HAGYOMÁNYA</h1>
+                <div class="main">
+                    <p> 
+                        <img src="./static/images/adventKoszoru2.jpg">
+                        Az adventi koszorú készítésének
+                        hagyománya csupán a XIX-XX. század
+                        környékén terjedt el. Az első
+                        ,,koszorút” az 1839-ben egy német
+                        evangélikus lelkész – Johann H.
+                        Wichern – állította, amelynek alapja
+                        egy szekérkerék volt, és 23 gyertyával
+                        volt díszítve.
+                        <br>
+                        <br>
+                        A karácsony közeledtével, a lelkész
+                        minden nap egyel több gyertyát
+                        gyújtott meg az ünnepre való
+                        készülődés jegyében, a fény
+                        növekedésének jelképeként. A mai
+                        adventi koszorúk általában kör
+                        alakúak, fenyőágból készülnek, és
+                        négy gyertyával vannak díszítve, a
+                        négy adventi vasárnapnak
+                        megfelelően.
+                        <br>
+                        <br>
+                        Minden vasárnap (vagy az azt
+                        megelőző este), eggyel több gyertyát
+                        gyújtanak meg a koszorún. Advent
+                        utolsó vasárnapján mind a négy
+                        gyertya egyszerre tölti meg a családok
+                        otthonait, és az emberek szívét
+                        melegséggel és fénnyel.
+                        <br>
+                        <br>
+                        A katolikus egyház szokásai szerint, a
+                        gyertyák színe lila, egy kivételével,
+                        amely rózsaszín. A lila szín a bűnbánat
+                        és a megtérés jelképe, a rózsaszín
+                        <br>
+                        <br>
+                        Amikor a kisfiú felnőtt, üzleti
+                        vállalkozásba kezdett, és
+                        hagyományos, házikó alakú adventi
+                        naptárakat kezdett el készíteni az
+                        1900-as évek első felében, amelynek
+                        mind a 24 ablaka egy-egy édességet
+                        rejtett.
+                        <br>
+                        <br>
+                        Az utóbbi évtizedekben az adventi
+                        naptáraknak is számos modern
+                        változata terjedt el, amely már nem
+                        csak csokoládét és cukorkákat, hanem
+                        apróbb ajándékokat is rejt magában, a
+                        gyerekek legnagyobb örömére.
+                        <br>
+                        <br>
+                        pedig a közelgő örömünnepet
+                        szimbolizálja. Ezekhez a gyertyákhoz
+                        többféle szimbólumot is társítanak,
+                        mint például a hit, remény, szeretet,
+                        öröm, illetve a katolikus szimbolika
+                        szerint egy-egy személyre vagy
+                        közösségre is utalnak, mint Ádám és
+                        Éva, a zsidó nép, Keresztelő Szent
+                        János és Szűz Mária.
+                        <br>
+                        <br>
+                        Ezek a hagyományok az utóbbi időben
+                        sokat változtak, és ma már igen
+                        sokféle színű gyertyával díszítik az
+                        adventi koszorúkat. Nagy
+                        népszerűségnek örvendenek az
+                        egyszerű szalmakoszorúk, vagy a
+                        mohával bevont változatok is, de a
+                        különleges és egyedi díszítések is
+                        egyre elterjedtebbek.
+                        <br>
+                        <br>
+                        Sokan saját kezűleg készítik el az
+                        adventi koszorút, így még inkább
+                        részeseivé válnak az ünnepi
+                        készülődés hangulatának, mások
+                        egyszerűen csak gyertyákat gyújtanak,
+                        koszorúalap nélkül.
+                        <br>
+                        <br>
+                        Gyere és készítsd el velünk a saját
+                        adventi koszorúdat!
+                    </p>
+                </div>
+                <div class="player">
+                    <video controls>
+                        <source src="./static/videos/adventiGyertyaMese.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="main">
+                    <p>
+                        Az adventi naptár hagyománya egy
+                        német édesanyához kötődik, aki ennek
+                        segítségével igyekezett megkönnyíteni
+                        gyermeke számára a karácsonyi
+                        várakozás. Egy kemény papírlapra
+                        huszonnégy darab csokoládét tűzött és
+                        megengedte gyermekének, hogy
+                        december minden napján – egészen
+                        karácsonyig – minden este megegyen
+                        közülük egyet.
+                    </p>
+                </div>
+            </dialog>
+            <div class="door">3</div>
         </div>
-        <div class="item item12" id="item12">
-            <button id="x" class="fill-div clickable" onclick="xClick()" >24</button>
+        <div class="item large item12">
+            <p class="hide">24</p>
+            <div class="leftDoor">
+                2
+                <img class="imgMiki" src="./static/images/miki.png">
+            </div>
+            <div class="rightDoor">4</div>
         </div>
-        <div class="item item13" id="item13">
-            <button id="k" class="fill-div clickable" onclick="kClick()" >11</button>
+        <div class="item medium item13">
+            <p class="hide">11</p>
+            <dialog class="content contentDay11">
+                <h1>Mindannyian keresünk egy apró
+                    csillagot karácsony éjjelén … ez
+                    inspirálta Mezei Lénárd 2/14
+                    idegenvezető szakos hallgatónkat aki
+                    saját versét szavalja el nekünk</h1>
+                <div class="player">
+                    <video class="mobileVid" controls>
+                        <source src="./static/videos/11_nap_Lenard_video.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="overflow">
+                    <p> 
+                        Mezei Lénárd: Az apró csillag <br>
+                        Lehűltek a tüzes napok, <br>
+                        Hamarabb is fáradok. <br>
+                        Csillog, ragyog, izeg-mozog <br>
+                        A Hold, s a fény mit itt hagy <br>
+                        Milliónyi apró csillag. <br>
+                        <br>
+                        Egy kell közülük, mi fénylik majd a fenyőn, <br>
+                        Egy kell csak, ki majd lépeget a háztetőn. <br>
+                        Isten adta áldást hozott <br>
+                        Minden évben eddig az illatt, <br>
+                        Minek őre egy fényes, apró csillag. <br>
+                        <br>
+                        Karácsonynak hívjuk ezt melegséget, <br>
+                        Ezt a törődő, gyermektelen feleséget. <br>
+                        A Kandaló tűz, mint apró pocak morog <br>
+                        A fehér éjjelen, mi oly gyorsan elillan, <br>
+                        Mint az a szent de apró csillag. <br>
+                        <br>
+                        De van, ki fényét tovább hordja, <br>
+                        A fény meséjét tovább mondja. <br>
+                        S egy szerető körben, körbe forog <br>
+                        Az érzés, mi örökké kacag, <br>
+                        Ákár az a halhatatlan, apró csillag. <br>
+                    </p>
+                </div>
+            </dialog>
+            <div class="door">
+                11
+                <img class="imgPenguin" src="./static/images/penguin1.png">
+            </div>
         </div>
-        <div class="item item14" id="item14">
-            <button id="j" class="fill-div clickable" onclick="jClick()" >10</button>
+        <div class="item small item14">
+            <p class="hide">10</p>
+            <dialog class="content contentDay10">
+                <h1>EGY CSODÁLATOS DAL A 10. ADVENTI NAPRA! HALLGASD SZERETETTEL POLESTYUK TIBOR TANÁR ÚR ELŐADÁSÁBAN!</h1>
+                <div class="player">
+                    <video controls>
+                        <source src="./static/videos/10_nap_Zoran_video.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="overflow">
+                    <p> 
+                        A ritka percek selyemszalagját most <br>
+                        együtt bontsuk fel, <br>
+                        A számlát úgysem veszíthetjük el, most <br>
+                        mégis rejtsük el, <br>
+                        S mint szelíd kéz a lázas gyermek forró <br>
+                        homlokán, <br>
+                        Vagy rossz álom, ha felriaszt, és <br>
+                        odabújsz hozzám, <br>
+                        Olyan jó-jó-jó, de mondd, hány perc az <br>
+                        ünnep? <br>
+                        Oh mondd-mondd-mondd-mondd- <br>
+                        mondd, mondd, meddig tart? <br>
+                        A béke, nehogy végleg elfelejtsd, üzen, <br>
+                        hogy létezik, <br>
+                        Mondd, meglep-e, ha átnyújtom neked <br>
+                        az ünnep perceit? <br>
+                        S csak félrekapcsolt csengetés, ha <br>
+                        drága hangot vársz <br>
+                        Vagy régi zsebben maradt pénz, mit <br>
+                        szűk napon találsz <br>
+                        Oh mondd-mondd-mondd-mondd- <br>
+                        mondd, mit ér az ünnep? <br>
+                        Oh mondd-mondd-mondd-mondd- <br>
+                        mondd, mondd, meddig tart? <br>
+                        S mint szelíd kéz a lázas gyermek forró <br>
+                        homlokán, <br>
+                        Vagy rossz álom, ha felriaszt, és <br>
+                        odabújsz hozzám, <br>
+                        Olyan jó-jó-jó, de mondd, hány perc az <br>
+                        ünnep? <br>
+                        Oh mondd-mondd-mondd-mondd- <br>
+                        mondd, mondd, meddig tart? <br>
+                    </p>
+                </div>
+            </dialog>
+            <div class="door">
+                10
+                <img class="imgCat" src="./static/images/cat.png">
+            </div>
         </div>
-        <div class="item item15" id="item15">
-            <button id="o" class="fill-div clickable" onclick="oClick()" >15</button>
+        <div class="item medium item15">
+            <p class="hide">15</p>
+            <dialog class="content contentDay15">
+                <h1>Ha másod másod nincs is ezt add tovább!</h1>
+                <div class="main">
+                    <p>
+                        <span class="bigBold poemHead smaller">
+                            A hála érzésének
+                            megtapasztalása gyönyörű
+                            érzés, és akkor lesz igazán
+                            mély, ha nem hagyod magadban
+                            …Így Te sem hagyd magadban,
+                            add tovább, ahogy ezt a
+                            gyönyörű dalt Császár Evelin
+                            diákunk hálából ajándékozta
+                            nekünk, hallgassuk együtt!
+                        </span>
+                        <br>
+                    </p>
+                </div>
+                <div class="player">
+                    <video class="mobileVid" controls>
+                        <source src="./static/videos/15_nap_Add tovabb_video.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="overflow">
+                    <p> 
+                        <span class="bigBold poeamHead spacingY">
+                            Csondor Kata: Add tovább
+                        </span>
+                        Hóban ébred majd az ünnep <br>
+                        Minden percben nevet ránk <br>
+                        Tud-e bármi szebbet adni <br>
+                        Mint a békés nagyvilág? <br>
+                        Körbenézel, s látsz egy arcot <br>
+                        Amin némán gond pihen <br>
+                        Reményt adhatsz pár mosollyal <br>
+                        Hogy a holnap más legyen <br>
+                        Jut még bárkinek <br>
+                        A tiszta fényből egy cseppnyi láng <br>
+                        Jókedv könny helyett <br>
+                        Ha másod nincs is, ezt add tovább <br>
+                        Hóban ébred majd az ünnep <br>
+                        Minden percben nevet ránk <br>
+                        Tud-e bármi szebbet adni <br>
+                        Mint a békés nagyvilág? <br>
+                        Körbenézel, s látsz egy házat <br>
+                        Mit a napfény elkerül <br>
+                        Kopogj csendben, meleg szívvel <br>
+                        úgy már nem lesz egyedül <br>
+                        Jut még bárkinek <br>
+                        A tiszta fényből egy cseppnyi láng <br>
+                        Jókedv könny helyett <br>
+                        Ha másod nincs is, add tovább <br>
+                        Van még gondolat <br>
+                        Mi átadható <br>
+                        S van száz pillanat <br>
+                        Mi szétosztható <br>
+                        Jut még bárkinek <br>
+                        A tiszta fényből egy cseppnyi láng <br>
+                        Jókedv könny helyett <br>
+                        Ha másod nincs is, ha másod nincs is <br>
+                        Csak add tovább <br>
+                    </p>
+                </div>
+            </dialog>
+            <div class="door">15</div>
         </div>
-        <div class="item item16" id="item16">
-            <button id="g" class="fill-div clickable" onclick="gClick()" >7</button>
+        <div class="item small item16">
+            <p class="hide">7</p>
+            <dialog class="content contentDay7">
+                <h1>HOGYAN KÉSZÜLNEK AZ ANGOLSZÁSZ ORSZÁGOK AZ ADVENTRE, KARÁCSONYRA...NÉZZ BELE HOGYAN KÉSZÜLNEK A MI DIÁKJAINK ANGOL ÓRÁN AZ ÜNNEPEKRE</h1>
+                <div class="main">
+                    <img src="./static/images/angolKoszoru.png">
+                    <div class="player">
+                        <video controls>
+                            <source src="./static/videos/adventiGyertyaMese.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+            </dialog>
+            <div class="door">7</div>
         </div>
-        <div class="item item17" id="item17">
-            <button id="m" class="fill-div clickable" onclick="mClick()" >13</button>
+        <div class="item small item17">
+            <p class="hide">13</p>
+            <div class="door">13</div>
         </div>
-        <div class="item item18" id="item18">
-            <button id="l" class="fill-div clickable" onclick="lClick()" >12</button>
+        <div class="item medium item18">
+            <p class="hide">12</p>
+            <dialog class="content contentDay12">
+                <h1>A jótékonyság kötelességünk
+                    „Ne fordítsd el arcodat a szegénytől” (Tób
+                    4,7)</h1>
+                <div class="spacingY">
+                    <p> 
+                        A legnagyobb ajándék az együtt töltött idő.
+                        Iskolánk néhány diákja közösen szolgálatot
+                        vállalt a Ferences szegénykonyhán és 40
+                        rászoruló számára főznek ma vacsorát. Az
+                        együtt töltött idő, a közös élmény a
+                        legnagyobb ajándék, amit valakinek adhatsz.
+                        Ha valakit megajándékozol a saját időddel,
+                        ajándékozol vele egy darabot is a szívedből,
+                        életedből, mely örökre megmarad. Kövesd Te
+                        is a példánkat és legyél a szeretet követe és
+                        szolgáló szeretettel fordulj olyanok felé,
+                        akiknek segítsége van Rád! Keress olyan
+                        szervezeteket akiknek szüksége van
+                        önkéntesekre, segítőkre de ne csak az adventi
+                        időszakban, az év minden napján szükség
+                        lehet Rád!
+                    </p>
+                </div>
+                <div class="player">
+                    <video controls>
+                        <source src="./static/videos/1_nap_Edina.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </dialog>
+            <div class="door">12</div>
         </div>
-        <div class="item item19" id="item19">
-            <button id="p" class="fill-div clickable" onclick="pClick()" >16</button>
+        <div class="item medium item19">
+            <p class="hide">16</p>
+            <div class="door">16</div>
         </div>
-        <div class="item item20" id="item20">
-            <button id="u" class="fill-div clickable" onclick="uClick()" >21</button>
+        <div class="item small item20">
+            <p class="hide">21</p>
+            <div class="door">
+                <img class="imgSnowhead" src="./static/images/snowmanhead.png">
+                21
+            </div>
         </div>
-        <div class="item item21" id="item21">
-            <button id="v" class="fill-div clickable" onclick="vClick()" >22</button>
+        <div class="item large item21">
+            <p class="hide">22</p>
+            <div class="leftDoor">2</div>
+            <div class="rightDoor">2</div>
         </div>
-        <div class="item item22" id="item22">
-            <button id="w" class="fill-div clickable" onclick="wClick()" >23</button>
+        <div class="item small item22">
+            <p class="hide">23</p>
+            <div class="door">23</div>
         </div>
-        <div class="item item23" id="item23">
-            <button id="r" class="fill-div clickable" onclick="rClick()" >18</button>
+        <div class="item small item23">
+            <p class="hide">18</p>
+            <div class="door">18</div>
         </div>
-        <div class="item item24" id="item24">
-            <button id="s" class="fill-div clickable" onclick="sClick()" >19</button>
+        <div class="item medium item24">
+            <p class="hide">19</p>
+            <div class="door">
+                19
+                <img class="imgDeer" src="./static/images/deer.png">
+            </div>
         </div>
     </div>
-    <script src="main.js"></script>
+    <footer>
+        Az Online Kalendáriumot, Czető Ákos, Papp Kitti, Németh Kornél, Rácz Norbert, Rozsi László, Maksa Kamilla 2/14 Szft szakos hallgatók készítették.
+    </footer>
 </body>
 </html>

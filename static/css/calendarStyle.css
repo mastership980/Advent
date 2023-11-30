@@ -1,0 +1,222 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#wrapper{
+  position: relative;
+  box-shadow: 5px 5px 5px #8ab8c4;
+  font-family: 'Anton', sans-serif;
+  font-size: 50px;
+  background-image: url("../images/Koko.png");
+  background-position: center;
+  background-size: contain;
+  color: white;
+  perspective: 1200px;
+}
+
+.item{
+  z-index: 1;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  border: 1px solid black;
+  border-radius: 30px;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  transform-style: preserve-3d;
+  user-select: none;
+  background-color: rgb(227, 243, 247);
+}
+
+.hide{
+  display: none;
+}
+
+.door{
+  z-index: 3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+  background-color: rgba(164, 209, 224, 1);
+}
+
+.leftDoor{
+  z-index: 3;
+  display: flex;
+  width: 50%;
+  height: 100%;
+  align-items: center;
+  justify-content: right;
+  border-radius: 30px 0 0 30px;
+  background-color: rgba(164, 209, 224, 1);
+}
+
+.rightDoor{
+  z-index: 3;
+  display: flex;
+  width: 50%;
+  height: 100%;
+  align-items: center;
+  justify-content: left;
+  border-radius: 0 30px 30px 0;
+  background-color: rgba(164, 209, 224, 1);
+}
+
+@keyframes openToLeft {
+  from {
+    transform: rotateY(0deg);
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0);
+  }
+  to {
+    transform: rotateY(-105deg);
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 1);
+  }
+}
+
+@keyframes openToDown {
+  from {
+    transform: rotateX(0deg);
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0);
+  }
+  to {
+    transform: rotateX(-130deg);
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 1);
+  }
+}
+
+@keyframes openToDoubleLeft {
+  from{
+    transform: rotateY(0deg);
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0);
+  }
+  to{
+    transform: rotateY(-105deg);
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 1);
+  }
+}
+
+@keyframes openToDoubleRight {
+  from{
+    transform: rotateY(0deg);
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0);
+  }
+  to{
+    transform: rotateY(105deg);
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 1);
+  }
+}
+
+.small.opened > .door{
+  transform-origin: left;
+  animation: openToLeft .5s ease-in-out forwards;
+}
+
+.medium.opened > .door{
+  transform-origin: bottom;
+  animation: openToDown .5s ease-in-out forwards;
+}
+
+.large.opened > .leftDoor{
+  transform-origin: left;
+  animation: openToDoubleLeft .5s ease-in-out forwards;
+}
+
+.large.opened > .rightDoor{
+  transform-origin: right;
+  animation: openToDoubleRight .5s ease-in-out forwards;
+}
+
+
+/*Done*/
+@keyframes doneSmall {
+  from{
+    transform: rotateY(0deg);
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0);
+  }
+  to{
+    transform: rotateY(-20deg);
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 1);
+  }
+}
+@keyframes doneMedium {
+  from{
+    transform: rotateX(0deg);
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0);
+  }
+  to{
+    transform: rotateX(-30deg);
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 1);
+  }
+}
+@keyframes doneLargeLeft {
+  from{
+    transform: rotateY(0deg);
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0);
+  }
+  to{
+    transform: rotateY(-30deg);
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 1);
+  }
+}
+@keyframes doneLargeRight {
+  from{
+    transform: rotateY(0deg);
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0);
+  }
+  to{
+    transform: rotateY(30deg);
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 1);
+  }
+}
+
+.small.done > .door{
+  transform-origin: left;
+  animation: doneSmall .5s ease-in-out 100ms forwards;
+  background-color: rgba(164, 209, 224, 1);
+}
+
+.medium.done > .door{
+  transform-origin: bottom;
+  animation: doneMedium .5s ease-in-out 100ms forwards;
+  background-color: rgba(164, 209, 224, 1);
+}
+
+.large.done > .leftDoor{
+  transform-origin: left;
+  animation: doneLargeLeft .5s ease-in-out 100ms forwards;
+  background-color: rgba(164, 209, 224, 1);
+}
+
+.large.done > .rightDoor{
+  transform-origin: right;
+  animation: doneLargeRight .5s ease-in-out 100ms forwards;
+  background-color: rgba(164, 209, 224, 1);
+}
+
+/*Current*/
+@keyframes current {
+  0%{
+    transform: rotateZ(0deg);
+  }
+  25%{
+    transform: rotateZ(-5deg);
+  }
+  50%{
+    transform: rotateZ(5deg);
+  }
+  100%{
+    transform: rotateZ(0deg);
+  }
+}
+
+.item.current:not(.opened):not(.done){
+  animation: current 1s ease-in-out infinite;
+}
