@@ -27,6 +27,10 @@
     padding: 20px 40px 20px 40px;
 }
 
+video{
+    width: 100%;
+}
+
 .overflow{
     max-height: 300px;
     overflow-y: scroll;
@@ -65,6 +69,22 @@ span{
     text-align: center;
 }
 
+.smaller{
+    font-size: 25px;
+}
+
+.spacingY{
+    padding-block: 10px;
+}
+
+.mobileVid{
+    width: 50%;
+}
+
+.main{
+    margin: 20px;
+}
+
 /*Day 2*/
 .content.contentDay2 p{
     font-size: 20px;
@@ -77,14 +97,6 @@ span{
     width: 400px;
     float: left;
     margin: 10px;
-}
-
-.content.contentDay2 .player video{
-    width: 100%;
-}
-
-.main{
-    margin: 20px;
 }
 
 /*Day 3*/
@@ -103,6 +115,44 @@ span{
 
 .content.contentDay3 .player video{
     width: 100%;
+}
+
+/*Day7*/
+.content.contentDay7 .main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.content.contentDay7 img{
+    position: static;
+    width: 100%;
+}
+
+/*Day8*/
+.content.contentDay8 .imgHolder{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.content.contentDay8 img
+{
+    position: static;
+    width: 90%;
+}
+
+.content.contentDay8 ul{
+    font-size: 20px;
+    padding-left: 30px;
+    color: #6b5d38;
+}
+
+/*Day11*/
+.content.contentDay8 ul li{
+    padding-block: 10px;
 }
 
 ::-webkit-scrollbar {
