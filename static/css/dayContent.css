@@ -6,10 +6,18 @@
     box-shadow: 0px 0px 100px #809ca3;
     z-index: 3000;
     background-color: #e3f3f7;
-    max-height: 90vh;
+    max-height: 95vh;
     max-width: 730px;
     animation: fade 0.5s ease-in-out normal;
     cursor: default;
+}
+
+.credit{
+    width: 100%;
+    color: #315b84;
+    font-size: 20px;
+    text-align: center;
+    padding: 30px 10px 10px 10px;
 }
 
 @keyframes fade {
@@ -32,7 +40,7 @@ video{
 }
 
 .overflow{
-    max-height: 300px;
+    max-height: 350px;
     overflow-y: scroll;
 }
 
@@ -81,8 +89,35 @@ span{
     width: 50%;
 }
 
+.bold{
+    font-weight: bold;
+}
+
 .main{
     margin: 20px;
+}
+
+.content img{
+    position: static;
+}
+
+.content .imgHolder2 img{
+    width: 250px;
+}
+
+.content .imgHolder{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.content .imgHolder2{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
 }
 
 /*Day 2*/
@@ -131,13 +166,6 @@ span{
 }
 
 /*Day8*/
-.content.contentDay8 .imgHolder{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-}
-
 .content.contentDay8 img
 {
     position: static;
@@ -153,20 +181,4 @@ span{
 /*Day11*/
 .content.contentDay8 ul li{
     padding-block: 10px;
-}
-
-::-webkit-scrollbar {
-    width: 10px;
-}
-  
-::-webkit-scrollbar-track {
-    background: #f1f1f1; 
-}
-
-::-webkit-scrollbar-thumb {
-    background: #888; 
-}
-
-::-webkit-scrollbar-thumb:hover {
-    background: #555; 
 }
