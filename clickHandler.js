@@ -4,7 +4,7 @@ const today = new Date()
 const currentMonth = today.getMonth()
 const currentDay = today.getDate()
 
-const month = 10
+const month = 11
 let index = 0
 
 if(localStorage.getItem("isDone") === null || 
