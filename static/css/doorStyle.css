@@ -4,18 +4,6 @@
   box-sizing: border-box;
 }
 
-#wrapper{
-  position: relative;
-  box-shadow: 5px 5px 5px #8ab8c4;
-  font-family: 'Anton', sans-serif;
-  font-size: 50px;
-  background-image: url("../images/Koko.png");
-  background-position: center;
-  background-size: contain;
-  color: white;
-  perspective: 1200px;
-}
-
 .item{
   z-index: 1;
   position: relative;
