@@ -43,11 +43,6 @@ const interval = setInterval(() => {
       }
     })
     item.onclick = () => {
-      if (!item.children[1].open) 
-      {
-        item.children[1].showModal()
-        item.children[1].scrollTop = 0
-      }
       if(currentDay == item.firstElementChild.textContent.trim() && currentMonth == month)
       {
         //zIndex azért hogy amikor kinyílik ne legyen overlap
