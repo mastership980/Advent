@@ -1,18 +1,6 @@
-body{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
 #wrapper{
-    width: 730px;
-    height: 900px;
-    padding: 10px;
-    display: grid;
     grid-template-columns: repeat(9, 1fr);
     grid-template-rows: repeat(12, 1fr);
-    gap: 10px;
 }
 
 .item1{

@@ -1,6 +1,7 @@
-img{
+.leftDoor img,
+.rightDoor img,
+.door img{
     position: absolute;
-    width: 100px;
 }
 
 .imgStar{
@@ -11,16 +12,19 @@ img{
 
 .imgTree{
     bottom: 0px;
-    right: 10px;
+    right: 0px;
+    width: 120px;
 }
 
 .imgBall{
     right: 0;
+    bottom: 5px;
+    width: 100px;
 }
 
 .imgPenguin{
-    right: -40px;
-    width: 200px;
+    right: 10px;
+    width: 40px;
 }
 
 .imgMiki{
@@ -45,4 +49,51 @@ img{
     right: -14px;
     bottom: -6px;
     width: 80px;
+}
+
+@media (width < 790px){
+    .imgStar{
+        display: none;
+    }
+    
+    .imgTree{
+        bottom: 0px;
+        right: 7%;
+        width: 55px;
+    }
+    
+    .imgBall{
+        top: 50%;
+        transform: translateY(-50%);
+        right: 2%;
+        width: 30px;
+    }
+    
+    .imgPenguin{
+        right: 5%;
+        width: 30px;
+    }
+    
+    .imgMiki{
+        left: 5%;
+        bottom: 0;
+        width: 50px;
+    }
+    
+    .imgCat{
+        right: 10px;
+        bottom: 0px;
+        width: 35px;
+    }
+    
+    .imgSnowhead{
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 0;
+        width: 50px;
+    }
+    
+    .imgDeer{
+        display: none;
+    }
 }
