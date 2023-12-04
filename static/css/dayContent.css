@@ -112,7 +112,7 @@ iframe{
 }
 
 .content .imgHolder2 img{
-    width: 100%;
+    width: 30% !important;
 }
 
 /*Day 2*/
@@ -188,5 +188,21 @@ iframe{
 
     .content.contentDay5 .main p{
         font-size: 15px;
+    }
+
+    .content .imgHolder2 img{
+        width: 70% !important;
+    }
+}
+
+@media (width > 600px) {
+    iframe{
+        height: 300px;
+    }
+}
+
+@media (width < 350px) {
+    .content .imgHolder2 img{
+        width: 100% !important;
     }
 }
