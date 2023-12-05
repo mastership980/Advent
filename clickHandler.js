@@ -48,7 +48,7 @@ const interval = setInterval(() => {
         item.children[1].showModal()
         item.children[1].scrollTop = 0
       }
-      if(currentDay == item.firstElementChild.textContent.trim() && currentMonth == month)
+      if(item.firstElementChild.textContent.trim() <= currentDay && currentMonth == month)
       {
         //zIndex azért hogy amikor kinyílik ne legyen overlap
         item.style.zIndex = "1000"
