@@ -90,8 +90,20 @@ iframe{
     font-weight: bold;
 }
 
+.block{
+    display: block;
+}
+
 .main{
     margin: 20px;
+}
+
+.imgLarger{
+    width: 70% !important;
+}
+
+.imgSmaller img{
+    width: 40% !important;
 }
 /*Don't*/
 
@@ -109,10 +121,6 @@ iframe{
     align-items: center;
     justify-content: center;
     gap: 20px;
-}
-
-.content .imgHolder2 img{
-    width: 30% !important;
 }
 
 /*Day 2*/
@@ -133,29 +141,12 @@ iframe{
     font-size: 20px;
 }
 
-.content.contentDay3 img{
-    position: static;
-    display: inline;
-    width: 400px;
-    float: left;
-    margin: 10px;
-}
-
-.content.contentDay3 .player video{
-    width: 100%;
-}
-
 /*Day7*/
 .content.contentDay7 .main{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-
-.content.contentDay7 img{
-    position: static;
-    width: 100%;
 }
 
 /*Day8*/
@@ -171,7 +162,6 @@ iframe{
     color: #6b5d38;
 }
 
-/*Day11*/
 .content.contentDay8 ul li{
     padding-block: 10px;
 }
@@ -192,6 +182,18 @@ iframe{
 
     .content .imgHolder2 img{
         width: 70% !important;
+    }
+
+    .content h1{
+        font-size: 25px;
+    }
+    
+    .content p{
+        font-size: 20px;
+    }
+
+    .credit{
+        font-size: 15px;
     }
 }
 
