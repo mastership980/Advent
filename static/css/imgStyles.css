@@ -71,7 +71,7 @@
     
     .imgPenguin{
         right: 5%;
-        width: 30px;
+        width: 20px;
     }
     
     .imgMiki{
@@ -95,5 +95,13 @@
     
     .imgDeer{
         display: none;
+    }
+}
+
+@media (width < 600px){
+    .imgMiki{
+        left: 5%;
+        bottom: 0;
+        width: 40px;
     }
 }

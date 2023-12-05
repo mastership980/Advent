@@ -42,7 +42,8 @@ body{
 
 #wrapper{
     width: 730px;
-    min-width: 320px;
+    min-width: 310px;
+    max-height: 900px;
     padding: 10px;
     display: grid;
     gap: 10px;
@@ -53,15 +54,16 @@ body{
     background-position: center;
     background-size: contain;
     color: white;
-    perspective: 1200px;
+    perspective: 1000px;
 }
 
 @media (width < 790px){
     #wrapper{
-        max-width: 400px;
-        width: 300px;
+        font-size: 30px;
+        width: 65vw;
         max-height: 650px;
         margin: 10px;
+        perspective: 500px;
     }
     
 }
