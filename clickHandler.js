@@ -2,7 +2,7 @@ const items = document.querySelectorAll(".item")
 
 const today = new Date()
 const currentMonth = today.getMonth()
-const currentDay = today.getDate() - 10
+const currentDay = today.getDate()
 
 const month = 11
 let index = 0
