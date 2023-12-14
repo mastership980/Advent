@@ -43,6 +43,11 @@ const interval = setInterval(() => {
       }
     })
     item.onclick = () => {
+      if (!item.children[1].open) 
+      {
+        item.children[1].showModal()
+        item.children[1].scrollTop = 0
+      }
       if(item.firstElementChild.textContent.trim() <= currentDay && currentMonth == month)
       {
         //zIndex azért hogy amikor kinyílik ne legyen overlap
@@ -50,11 +55,6 @@ const interval = setInterval(() => {
         item.classList.add("opened")
         localStorage.setItem("isDone", true.toString())
         localStorage.setItem("savedDay", currentDay.toString())
-        if (!item.children[1].open) 
-        {
-          item.children[1].showModal()
-          item.children[1].scrollTop = 0
-        }
       }
       else
       {
